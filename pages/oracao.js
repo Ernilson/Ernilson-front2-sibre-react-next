@@ -35,7 +35,7 @@ const Oracao = () => {
         setResponse({ formSave: true })
 
         try {
-            const res = await fetch(`http://apisitesibre-env.eba-83jt2j8s.us-east-1.elasticbeanstalk.com/oracao`, {
+            const res = await fetch(`https://apisitesibre-env.eba-83jt2j8s.us-east-1.elasticbeanstalk.com/oracao`, {
                 method: `POST`,
                 body: JSON.stringify(oracao),
                 headers: { 'Content-Type': 'application/json' }

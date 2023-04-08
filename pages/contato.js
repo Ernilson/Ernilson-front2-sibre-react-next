@@ -41,7 +41,7 @@ const Contato = () => {
         console.log("Iniciando envio da mensagem...");
     
         try {
-            const res = await fetch(`http://apisitesibre-env.eba-83jt2j8s.us-east-1.elasticbeanstalk.com/contato`, {
+            const res = await fetch(`https://apisitesibre-env.eba-83jt2j8s.us-east-1.elasticbeanstalk.com/contato`, {
                 method: `POST`,
                 body: JSON.stringify(contato),
                 headers: { 'Content-Type': 'application/json' }

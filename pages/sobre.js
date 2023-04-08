@@ -44,8 +44,8 @@ function sobre() {
                         Igreja Batista do Plano Piloto e contou com a ajuda de um grupo de irmãos norte americanos vindos ao Brasil com esta
                         finalidade. A Sibre está localizada na quadra 105 área especial 01 - Avenida Vargem da Benção.
                         Ao relembrarmos nossa história, algumas pessoas foram determinantes para que a nossa igreja fosse estabelecida e estas contribuíram em nosso
-                        crescimento. Vale mencionar Pr. Jaime França e sua família, Pr. Alexandre e sua esposa Raquel Mousinho de Moura Fé, Pr. Daniel Ventura, Pr. Edvan Xavier e Pr. Regivaldo Dantas.
-                        Hoje a Sibre é pastoreada pelo Pr. Josias Alves da Costa com o auxílio do Pr. Luíz Eduardo ‘Dudu’.
+                        crescimento. Vale mencionar Pr. Jaime França e sua família, Pr. Alexandre e sua esposa Raquel Mousinho de Moura Fé, Pr. Daniel Ventura, Pr. Edvan Xavier, Pr. Regivaldo Dantas e Pr. Josias Alves da Costa.
+                        Hoje a Sibre é pastoreada pelo Pr.Lacir com o auxilio dos seminaristas: Jairo Guimarães, Lucio Macedo e Gostavo Lenor.
 </p>
                     </div>
                     <div className="col-md-5 order-md-1">
