@@ -48,7 +48,7 @@ function Home({ data }) {
             }.circulo1{
             width:140px;
             height: 140px;
-            background-image: url(/culto.png);           
+            background-image: url(/CultoPrLaci2.jpg);           
             }.centralizar{
             margin: 0 auto !important;
             float: none !important;
@@ -82,10 +82,10 @@ function Home({ data }) {
                             <Link href="/comunhao">
                                 <a className="btn btn-light"><p>Viver em comunhão é uma marca da nossa comunidade.
                                 Venha ser igreja com a gente!
-                                Culto de oração segunda às 8h -
+                                Culto de oração teça feira às 7h -
                                 PG homens terça às 20h -
                                 Culto de oração quarta às 20h -
-                                Culto de oração sexta às 16h -
+                                Escola Biblica Dominical EBD às 09hs -                                
                                 Culto de celebração domingo às 19h
                                     </p></a>
                             </Link>

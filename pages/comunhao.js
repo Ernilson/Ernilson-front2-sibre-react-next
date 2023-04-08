@@ -48,7 +48,12 @@ function Encontros() {
                         .</p>  
                     </div>
                     <div className="col-md-5 order-md-1">
-                        <img src="/culto2.png" className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                        <img src="/PrLacir.jpeg" className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                            width="500" height="500" alt="Sibre" />
+
+                    </div>
+                    <div className="col-md-5 order-md-1">
+                        <img src="/CultoPrLaci.jpeg" className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
                             width="500" height="500" alt="Sibre" />
 
                     </div>
@@ -62,7 +67,12 @@ function Encontros() {
                         .</p>
                     </div>
                     <div className="col-md-5 order-md-1">
-                        <img src="/louvor2.png" className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                        <img src="/Minstr.jpeg" className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                            width="500" height="500" alt="Sibre" />
+
+                    </div>
+                    <div className="col-md-5 order-md-1">
+                        <img src="/MLASibre.jpeg" className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
                             width="500" height="500" alt="Sibre" />
 
                     </div>

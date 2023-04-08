@@ -158,7 +158,7 @@ const Contato = () => {
                     <div className="col-md-6"><br />
                         <h3 className="featurette-heading">Contribua com o Reino </h3>
                         <p className="lead">Banco-PagSeguro: Nº-290, Agência: 0001, Conta: 051116937,
-                                Tipo: Conta de Pagamento, CNPJ: 186855200001/40 - Nº da Chave Pix Aleatório: 9738039b-806d-4fa59b85-261eb3d9d24.</p>
+                                Tipo: Conta de Pagamento, pix CNPJ: 186855200001/40 - Pix:sibre25@gmail.com</p>
                         <hr />
                         <address>
                             <strong>Endereço</strong><br />
