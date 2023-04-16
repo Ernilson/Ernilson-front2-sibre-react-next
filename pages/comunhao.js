@@ -43,7 +43,7 @@ function Encontros() {
                         Encontros de oração: terças às 07hs -
                         PG homens: terça às 20hs -
                         Culto de oração: quarta às 20hs -
-                        Culto de oração: sexta às 16hs -
+                        Escola Bíblica Dominical EBD: domingo às 09hs -
                         Culto de celebração domingo: às 19hs
                         .</p>  
                     </div>
