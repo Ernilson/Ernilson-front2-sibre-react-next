@@ -40,11 +40,11 @@ function Encontros() {
                         <h2 className="featurette-heading">Nossos Encontros.</h2>
                         <p className="lead">Viver em comunhão é uma marca da nossa comunidade.
                         Venha ser igreja com a gente!
-                        Culto de oração - terças às 07hs
-                        PG homens - terça às 20hs
-                        Culto de oração - quarta às 20hs
-                        Culto de oração - sexta às 16hs
-                        Culto de celebração - domingo às 19hs
+                        Encontros de oração: terças às 07hs -
+                        PG homens: terça às 20hs -
+                        Culto de oração: quarta às 20hs -
+                        Culto de oração: sexta às 16hs -
+                        Culto de celebração domingo: às 19hs
                         .</p>  
                     </div>
                     <div className="col-md-5 order-md-1">
