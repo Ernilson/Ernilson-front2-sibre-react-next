@@ -1,82 +1,39 @@
 {
   "polyfillFiles": [
-    "static/chunks/polyfills-c67a75d1b6f99dc8.js"
+    "static/chunks/polyfills.js"
   ],
-  "devFiles": [],
-  "ampDevFiles": [],
+  "devFiles": [
+    "static/chunks/react-refresh.js"
+  ],
+  "ampDevFiles": [
+    "static/chunks/webpack.js",
+    "static/chunks/amp.js"
+  ],
   "lowPriorityFiles": [
-    "static/NEPpQcEmjfBUE_q4lb6lr/_buildManifest.js",
-    "static/NEPpQcEmjfBUE_q4lb6lr/_ssgManifest.js"
+    "static/development/_buildManifest.js",
+    "static/development/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
     "/": [
-      "static/chunks/webpack-69bfa6990bb9e155.js",
-      "static/chunks/framework-e70c6273bfe3f237.js",
-      "static/chunks/main-748fa114995cf5e9.js",
-      "static/chunks/203-bdb6764b869e16d1.js",
-      "static/chunks/664-6863c832d33388a7.js",
-      "static/chunks/pages/index-672147c239baff5f.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/index.js"
     ],
     "/_app": [
-      "static/chunks/webpack-69bfa6990bb9e155.js",
-      "static/chunks/framework-e70c6273bfe3f237.js",
-      "static/chunks/main-748fa114995cf5e9.js",
-      "static/css/ce1f7394190681c7.css",
-      "static/chunks/pages/_app-363f0cb247e1bbc0.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/_app.js"
     ],
     "/_error": [
-      "static/chunks/webpack-69bfa6990bb9e155.js",
-      "static/chunks/framework-e70c6273bfe3f237.js",
-      "static/chunks/main-748fa114995cf5e9.js",
-      "static/chunks/pages/_error-a4ba2246ff8fb532.js"
-    ],
-    "/acao_social": [
-      "static/chunks/webpack-69bfa6990bb9e155.js",
-      "static/chunks/framework-e70c6273bfe3f237.js",
-      "static/chunks/main-748fa114995cf5e9.js",
-      "static/chunks/203-bdb6764b869e16d1.js",
-      "static/chunks/664-6863c832d33388a7.js",
-      "static/chunks/pages/acao_social-b0049f7000b78531.js"
-    ],
-    "/apoio_Psicologico": [
-      "static/chunks/webpack-69bfa6990bb9e155.js",
-      "static/chunks/framework-e70c6273bfe3f237.js",
-      "static/chunks/main-748fa114995cf5e9.js",
-      "static/chunks/203-bdb6764b869e16d1.js",
-      "static/chunks/664-6863c832d33388a7.js",
-      "static/chunks/pages/apoio_Psicologico-9814890a6556c959.js"
-    ],
-    "/comunhao": [
-      "static/chunks/webpack-69bfa6990bb9e155.js",
-      "static/chunks/framework-e70c6273bfe3f237.js",
-      "static/chunks/main-748fa114995cf5e9.js",
-      "static/chunks/203-bdb6764b869e16d1.js",
-      "static/chunks/664-6863c832d33388a7.js",
-      "static/chunks/pages/comunhao-1f8e54061f7b5911.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/_error.js"
     ],
     "/contato": [
-      "static/chunks/webpack-69bfa6990bb9e155.js",
-      "static/chunks/framework-e70c6273bfe3f237.js",
-      "static/chunks/main-748fa114995cf5e9.js",
-      "static/chunks/203-bdb6764b869e16d1.js",
-      "static/chunks/pages/contato-2506746011b4fa02.js"
-    ],
-    "/oracao": [
-      "static/chunks/webpack-69bfa6990bb9e155.js",
-      "static/chunks/framework-e70c6273bfe3f237.js",
-      "static/chunks/main-748fa114995cf5e9.js",
-      "static/chunks/203-bdb6764b869e16d1.js",
-      "static/chunks/664-6863c832d33388a7.js",
-      "static/chunks/pages/oracao-90af7fd9e2854bb4.js"
-    ],
-    "/sobre": [
-      "static/chunks/webpack-69bfa6990bb9e155.js",
-      "static/chunks/framework-e70c6273bfe3f237.js",
-      "static/chunks/main-748fa114995cf5e9.js",
-      "static/chunks/203-bdb6764b869e16d1.js",
-      "static/chunks/664-6863c832d33388a7.js",
-      "static/chunks/pages/sobre-9cf744c311305b79.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/contato.js"
     ]
   },
   "ampFirstPages": []
