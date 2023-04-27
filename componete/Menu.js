@@ -37,7 +37,7 @@ const Menu = () => {
                         </NavItem>
 
                     </Nav>                   
-                    <NavbarBrand href="http://207.244.238.40:15521">adm</NavbarBrand>
+                    <NavbarBrand href="http://207.244.238.40:15521">Aminstrativo</NavbarBrand>
                 </Collapse>
                 </Container>
             </Navbar>
