@@ -50,14 +50,14 @@ const RodaPe = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <a href="tel:61991323236">
+                                    <Link href="tel:61991323236">
                                         <a className="link-rodape">(61)99132-3236</a>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="https://goo.gl/maps/nB3GEHK9yLHAeEYx8" target="_blank">
+                                    <Link href="https://goo.gl/maps/nB3GEHK9yLHAeEYx8" target="_blank">
                                         <a className="link-rodape">Areá Esp.01 - Rec.Das Emas/DF</a>
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -65,19 +65,19 @@ const RodaPe = () => {
                             <h6>Redes Sociais</h6>
                             <ul className="list-unstyled">
                                 <li>
-                                    <a href="https://www.instagram.com/sibrecanto/?hl=pt-br" target="_blank">
+                                    <Link href="https://www.instagram.com/sibrecanto/?hl=pt-br" target="_blank">
                                         <a className="link-rodape">Instagram</a>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="https://www.youtube.com/channel/UCWTywd1HwBLG3mpSI5hAmvg" target="_blank">
+                                    <Link href="https://www.youtube.com/channel/UCWTywd1HwBLG3mpSI5hAmvg" target="_blank">
                                         <a className="link-rodape">Youtube</a>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="https://goo.gl/maps/nB3GEHK9yLHAeEYx8" target="_blank">
+                                    <Link href="https://goo.gl/maps/nB3GEHK9yLHAeEYx8" target="_blank">
                                         <a className="link-rodape">Localização</a>
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>

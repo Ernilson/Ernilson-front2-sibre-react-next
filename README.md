@@ -16,6 +16,8 @@ Abra package.json e adicione o seguinte scripts:
   "build": "next build",
   "start": "next start"
 }
+Pra fazer o Build
+npm run build
 
 Rodar o projeto
 ### npm run dev
