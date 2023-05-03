@@ -35,7 +35,7 @@ const Oracao = () => {
         setResponse({ formSave: true })
 
         try {
-            const res = await fetch(`https://sibre2023.com.br/oracao`, {
+            const res = await fetch(`http://localhost:3000/oracao`, {
                 method: `POST`,
                 body: JSON.stringify(oracao),
                 headers: { 'Content-Type': 'application/json' }
@@ -131,8 +131,8 @@ const Oracao = () => {
                             <hr />
                             <address>
                                 <strong>Nossos encontro de oração</strong><br />
-                               <p> Nossos encontros de orações são nas segunda as 08:00hrs
-                                quarta as 20:00 e sexta as 16:hrs nestes encontros nossas equipes de
+                               <p> Nossos encontros de orações são nas terças feira as 07:00hrs
+                                quarta as 20:00 e nestes encontros nossas equipes de
                                 oração estaram orando por seus pedidos no altar intercedendo e clamando
                                 ao Deus Altissimo que não tardará em atende-lo, por tanto faça seu pedido
                                 e conte com o apoio da Sibre</p>
