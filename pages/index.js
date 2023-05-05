@@ -82,7 +82,7 @@ function Home({ data }) {
                             <Link href="/comunhao">
                                 <a className="btn btn-light"><p>Viver em comunhão é uma marca da nossa comunidade.
                                 Venha ser igreja com a gente!
-                                Culto de oração teça feira às 7h -
+                                Encontros de oração na terça feira às 7h -
                                 PG homens terça às 20h -
                                 Culto de oração quarta às 20h -
                                 Escola Biblica Dominical EBD às 09hs -                                
