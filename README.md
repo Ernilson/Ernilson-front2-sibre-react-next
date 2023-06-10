@@ -21,5 +21,9 @@ Abra package.json e adicione o seguinte scripts:
   "start": "next start"
 }
  - npm run build
+ 
+## Acessos
+- https://site-sibre.netlify.app/
+
 ## Pagina Home
 ![Home](https://github.com/Ernilson/Ernilson-front2-sibre-react-next/assets/30840118/a04198bc-d1ac-4848-a8d4-2f1446bc23ce)
