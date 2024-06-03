@@ -7,6 +7,7 @@
   "/contato": "pages/contato.html",
   "/": "pages/index.html",
   "/oracao": "pages/oracao.html",
+  "/seminario": "pages/seminario.html",
   "/sobre": "pages/sobre.html",
   "/_document": "pages/_document.js",
   "/404": "pages/404.html"

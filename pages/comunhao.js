@@ -67,13 +67,13 @@ function Encontros() {
                         .</p>
                     </div>
                     <div className="col-md-5 order-md-1">
-                        <img src="/Minstr.jpeg" className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                            width="500" height="500" alt="Sibre" />
+                        <img src="/Louvor2.0.jpeg" className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                            width="350" height="500" alt="Sibre" />
 
                     </div>
                     <div className="col-md-5 order-md-1">
-                        <img src="/MLASibre.jpeg" className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                            width="500" height="500" alt="Sibre" />
+                        <img src="/Sport1.png" className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                            width="600" height="500" alt="Sibre" />
 
                     </div>
                 </div>

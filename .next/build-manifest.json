@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/WPQDy4T0Uue9_Zhd8_sEL/_buildManifest.js",
-    "static/WPQDy4T0Uue9_Zhd8_sEL/_ssgManifest.js"
+    "static/yjwmFBSvceWMEYwij_2pm/_buildManifest.js",
+    "static/yjwmFBSvceWMEYwij_2pm/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -53,7 +53,7 @@
       "static/chunks/main-748fa114995cf5e9.js",
       "static/chunks/203-bdb6764b869e16d1.js",
       "static/chunks/664-6863c832d33388a7.js",
-      "static/chunks/pages/comunhao-f75aedd3abf84d84.js"
+      "static/chunks/pages/comunhao-fa32a8d914da2877.js"
     ],
     "/contato": [
       "static/chunks/webpack-69bfa6990bb9e155.js",
@@ -69,6 +69,12 @@
       "static/chunks/203-bdb6764b869e16d1.js",
       "static/chunks/664-6863c832d33388a7.js",
       "static/chunks/pages/oracao-b77a23a2342ae768.js"
+    ],
+    "/seminario": [
+      "static/chunks/webpack-69bfa6990bb9e155.js",
+      "static/chunks/framework-e70c6273bfe3f237.js",
+      "static/chunks/main-748fa114995cf5e9.js",
+      "static/chunks/pages/seminario-96b566528934e241.js"
     ],
     "/sobre": [
       "static/chunks/webpack-69bfa6990bb9e155.js",
