@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { BiArrowBack } from 'react-icons/bi';
+import { AiFillHome } from 'react-icons/ai'; 
 import styles from '../styles/seminario.module.css';
 import Pessoa1 from '../public/Pessoa1.jpg';
 import Pessoa2 from '../public/Pessoa2.jpg';
@@ -15,9 +15,9 @@ function Seminario() {
       <div className={styles.BackgroundImage}></div>
       <div className={styles.AppContent}>
         <header className={styles.AppHeader}>
-          <Link href="/">
-            <a className={styles.homeLink}>
-              <BiArrowBack size={24} />
+          <Link href="/home">
+            <a className={styles.homeLink}>            
+            <AiFillHome size={24} />
             </a>
           </Link>
           <h1>Seminário Mulheres</h1>
