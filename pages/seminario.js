@@ -18,8 +18,10 @@ function Seminario() {
           <Link href="/home">
             <a className={styles.homeLink}>            
             <AiFillHome size={24} />
+            <span className={styles.homeLinkText}>Início</span>
             </a>
           </Link>
+          <div className={styles.spacer}></div>
           <h1>Seminário Mulheres</h1>
           <h2>De corpo, alma e espírito</h2>
           <p className={styles.subtitle}>08 de julho de 2024</p>
