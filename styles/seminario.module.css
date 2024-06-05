@@ -1,0 +1,150 @@
+/* styles/seminario.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Trajan+Pro:wght@400;700&display=swap');
+
+.AppContainer {
+  position: relative;
+  height: 100vh; 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.BackgroundImage {
+  background-image: url('/Seminario1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  opacity: 0.2; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0; 
+}
+
+.AppContent {
+  position: relative;
+  z-index: 1;
+  padding-top: 220px; 
+}
+
+.AppHeader {
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  background-color: rgba(228, 157, 137, 0.5); 
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  z-index: 1000; 
+}
+
+.AppHeader h1 {
+  font-family: 'Trajan Pro', serif;
+  font-weight: 700;
+  font-size: 3em;
+  color: white;
+  letter-spacing: 2px; 
+  word-spacing: 5px; 
+  margin: 0;
+}
+
+.AppHeader h2 {
+  font-family: 'Trajan Pro', serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  color: white;
+  letter-spacing: 1px; 
+  word-spacing: 3px; 
+  margin: 0;
+}
+
+.subtitle {
+  font-family: 'Trajan Pro', serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  color: white;
+  margin-top: 10px; 
+  font-weight: bold; 
+  color: #5d4f4d; 
+  border-radius: 5px; 
+}
+
+.AppMain {
+  padding: 20px;
+  text-align: justify;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section h3 {
+  font-family: 'Trajan Pro', serif;
+  font-weight: 700;
+  font-size: 1.8em;
+  color: #e49d89; 
+  margin-top: 50px; 
+  margin-bottom: 10px;
+  text-align: center; 
+}
+
+.centeredText {
+  text-align: center;
+}
+
+.speakers {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; 
+}
+
+.speaker {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.speakerImage {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.AppFooter {
+  background-color: rgba(228, 157, 137, 0.5);
+  padding: 5px 0;
+  text-align: center;
+}
+
+.footerContent p  {
+  font-family: 'Trajan Pro', serif;
+  font-weight: 400;
+  font-size: 1.1em;
+  color: white;
+  margin-top: 10px; 
+  font-weight: bold; 
+  color: #5d4f4d; 
+  border-radius: 5px;  
+  margin: 0;
+  line-height: 1.1em;
+}
+
+.mapLink {
+  display: inline-flex; 
+  align-items: center; 
+  gap: 10px; 
+  padding: 5px; 
+}
+
+.homeLink {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  color: white;
+  text-decoration: none;
+}
