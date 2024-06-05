@@ -217,29 +217,6 @@ function Seminario() {
                                                 className: (_styles_seminario_module_css__WEBPACK_IMPORTED_MODULE_10___default().speaker),
                                                 children: [
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_3___default()), {
-                                                        src: _public_Pessoa2_jpg__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z,
-                                                        alt: "Monique",
-                                                        className: (_styles_seminario_module_css__WEBPACK_IMPORTED_MODULE_10___default().speakerImage),
-                                                        width: 150,
-                                                        height: 150
-                                                    }),
-                                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-                                                        children: [
-                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("strong", {
-                                                                children: "Monique"
-                                                            }),
-                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
-                                                            "M\xe9dica Cardiologista",
-                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
-                                                            "Mission\xe1ria"
-                                                        ]
-                                                    })
-                                                ]
-                                            }),
-                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                className: (_styles_seminario_module_css__WEBPACK_IMPORTED_MODULE_10___default().speaker),
-                                                children: [
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_3___default()), {
                                                         src: _public_Pessoa3_png__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Z,
                                                         alt: "Sabrina Braga",
                                                         className: (_styles_seminario_module_css__WEBPACK_IMPORTED_MODULE_10___default().speakerImage),
@@ -257,6 +234,33 @@ function Seminario() {
                                                             "Atua como Psic\xf3loga Cl\xednica e Hospitalar (COVID-19, UTI Adulto, Enfermarias, Centro Obst\xe9trico e Maternidade)",
                                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
                                                             "Professora de EBD e L\xedder de Jovens"
+                                                        ]
+                                                    })
+                                                ]
+                                            }),
+                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                className: (_styles_seminario_module_css__WEBPACK_IMPORTED_MODULE_10___default().speaker),
+                                                children: [
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_3___default()), {
+                                                        src: _public_Pessoa2_jpg__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z,
+                                                        alt: "Monique",
+                                                        className: (_styles_seminario_module_css__WEBPACK_IMPORTED_MODULE_10___default().speakerImage),
+                                                        width: 150,
+                                                        height: 150
+                                                    }),
+                                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
+                                                        children: [
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("strong", {
+                                                                children: "Monique Batista Nogueira Moura"
+                                                            }),
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
+                                                            "M\xe9dica Cardiologista e medicina est\xe9tica",
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
+                                                            "Ministra palestras sobre sa\xfade e auto cuidado para mulheres sob a perspectiva do evangelho",
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
+                                                            "Atua como Mission\xe1ria (Igreja Batista Millenium Bras\xedlia), bem como no minist\xe9rio kids e capelania hospitalar",
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
+                                                            "M\xe9dica mission\xe1ria nas comunidades ribeirinhas na Amaz\xf4nia em 2023 -  Manaus/Barco\xa0JJ\xa0Mesquita"
                                                         ]
                                                     })
                                                 ]
@@ -312,8 +316,8 @@ function Seminario() {
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_3___default()), {
                                                         src: _public_google_maps_icon_png__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Z,
                                                         alt: "Como chegar",
-                                                        width: 50,
-                                                        height: 60
+                                                        width: 60,
+                                                        height: 70
                                                     })
                                                 }),
                                                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
@@ -341,7 +345,7 @@ function Seminario() {
                                             className: (_styles_seminario_module_css__WEBPACK_IMPORTED_MODULE_10___default().mapLink),
                                             children: [
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                    href: "https://api.whatsapp.com/send?phone=5561984969591",
+                                                    href: "https://api.whatsapp.com/send?phone=5561985308920",
                                                     target: "_blank",
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_3___default()), {
                                                         src: _public_WhatsApp_icone_png__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Z,
@@ -356,7 +360,45 @@ function Seminario() {
                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("strong", {
                                                             children: "Respons\xe1vel pelo Evento:"
                                                         }),
-                                                        " Seminarista Jairo Correia ",
+                                                        " Aline de Moraes Carvalho - Minist\xe9rio de Mulheres",
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("strong", {
+                                                            children: "Telefone:"
+                                                        }),
+                                                        " (61) 98496-9591 ",
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {})
+                                                    ]
+                                                })
+                                            ]
+                                        })
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                        className: (_styles_seminario_module_css__WEBPACK_IMPORTED_MODULE_10___default().sectionComMapaContent),
+                                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                            className: (_styles_seminario_module_css__WEBPACK_IMPORTED_MODULE_10___default().mapLink),
+                                            children: [
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                    href: "https://api.whatsapp.com/send?phone=5561985308920",
+                                                    target: "_blank",
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_3___default()), {
+                                                        src: _public_WhatsApp_icone_png__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Z,
+                                                        alt: "WhatsApp",
+                                                        width: 30,
+                                                        height: 40,
+                                                        style: {
+                                                            visibility: "hidden"
+                                                        }
+                                                    })
+                                                }),
+                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
+                                                    className: (_styles_seminario_module_css__WEBPACK_IMPORTED_MODULE_10___default().text),
+                                                    children: [
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("strong", {
+                                                            children: "Apoio:"
+                                                        }),
+                                                        " Seminarista Jairo Correia",
                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("strong", {
                                                             children: "Telefone:"

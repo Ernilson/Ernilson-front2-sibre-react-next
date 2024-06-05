@@ -51,16 +51,6 @@ function Seminario() {
                 </p>
               </div>
               <div className={styles.speaker}>
-                <Image src={Pessoa2} alt="Monique" className={styles.speakerImage} width={150} height={150} />
-                <p>
-                  <strong>Monique</strong>
-                  <br />
-                  Médica Cardiologista
-                  <br />
-                  Missionária
-                </p>
-              </div>
-              <div className={styles.speaker}>
                 <Image src={Pessoa3} alt="Sabrina Braga" className={styles.speakerImage} width={150} height={150} />
                 <p>
                   <strong>Sabrina Braga</strong>
@@ -72,6 +62,20 @@ function Seminario() {
                   Professora de EBD e Líder de Jovens
                 </p>
               </div>
+              <div className={styles.speaker}>
+                <Image src={Pessoa2} alt="Monique" className={styles.speakerImage} width={150} height={150} />
+                <p>
+                  <strong>Monique Batista Nogueira Moura</strong>
+                  <br />
+                  Médica Cardiologista e medicina estética
+                  <br />
+                  Ministra palestras sobre saúde e auto cuidado para mulheres sob a perspectiva do evangelho
+                  <br />
+                  Atua como Missionária (Igreja Batista Millenium Brasília), bem como no ministério kids e capelania hospitalar  
+                  <br />
+                  Médica missionária nas comunidades ribeirinhas na Amazônia em 2023 -  Manaus/Barco JJ Mesquita
+                </p>
+              </div>              
             </div>
           </section>
 
@@ -95,7 +99,7 @@ function Seminario() {
                   href="https://www.google.com/maps/place/2%C2%AA+Igreja+Batista+de+Recanto+das+Emas/@-15.902251,-48.0777192,15z/data=!4m6!3m5!1s0x935a2cd59fa807a5:0xf96903564109be2b!8m2!3d-15.902251!4d-48.0777192!16s%2Fg%2F11c0vym11l?entry=ttu"
                   target="_blank"
                 >
-                  <Image src={Mapa} alt="Como chegar" width={50} height={60} />
+                  <Image src={Mapa} alt="Como chegar" width={60} height={70} />
                 </a>
                 <span className={styles.text}> Segunda Igreja Batista no Recanto das Emas – SIBRE  <br /> Q 105 área especial, 01 - Recanto das Emas, Brasília - DF, 70297-400</span>
               </div>
@@ -103,22 +107,37 @@ function Seminario() {
           </section>
 
           <section className={styles.section}>
-            <h3>CONTATO</h3>
-            <div className={styles.sectionComMapaContent}>
-              <div className={styles.mapLink}>
-                <a
-                  href="https://api.whatsapp.com/send?phone=5561984969591"
-                  target="_blank"
-                >
-                  <Image src={WhatsApp} alt="WhatsApp" width={30} height={40} />
-                </a>
-                <span className={styles.text}> 
-                  <strong>Responsável pelo Evento:</strong> Seminarista Jairo Correia <br />
-                  <strong>Telefone:</strong> (61) 98496-9591 <br />                  
-                </span>
-              </div>
-            </div>
-          </section>
+  <h3>CONTATO</h3>
+  <div className={styles.sectionComMapaContent}>
+    <div className={styles.mapLink}>
+      <a
+        href="https://api.whatsapp.com/send?phone=5561985308920"
+        target="_blank"
+      >
+        <Image src={WhatsApp} alt="WhatsApp" width={30} height={40} />
+      </a>
+      <span className={styles.text}>
+        <strong>Responsável pelo Evento:</strong> Aline de Moraes Carvalho - Ministério de Mulheres<br />
+        <strong>Telefone:</strong> (61) 98496-9591 <br />
+      </span>
+    </div>
+  </div>
+  <div className={styles.sectionComMapaContent}>
+    <div className={styles.mapLink}>
+      <a
+        href="https://api.whatsapp.com/send?phone=5561985308920"
+        target="_blank"
+      >
+        <Image src={WhatsApp} alt="WhatsApp" width={30} height={40} style={{ visibility: 'hidden' }} />
+      </a>
+      <span className={styles.text}>
+        <br /><br /> 
+        <strong>Apoio:</strong> Seminarista Jairo Correia<br />
+        <strong>Telefone:</strong> (61) 98496-9591 <br />
+      </span>
+    </div>
+  </div>
+</section>
 
         </main>
         <footer className={styles.AppFooter}>
@@ -128,7 +147,6 @@ function Seminario() {
         </footer>
       </div>
     </div>
-
   );
 }
 
