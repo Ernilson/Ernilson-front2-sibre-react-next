@@ -21,7 +21,9 @@ module.exports = {
 	"AppFooter": "seminario_AppFooter__sTQqc",
 	"footerContent": "seminario_footerContent__Q1Ciq",
 	"mapLink": "seminario_mapLink__Xsr3N",
-	"homeLink": "seminario_homeLink__Iw7Zb"
+	"homeLink": "seminario_homeLink__Iw7Zb",
+	"homeLinkIcon": "seminario_homeLinkIcon__Und6A",
+	"homeLinkText": "seminario_homeLinkText___8lcw"
 };
 
 
@@ -135,12 +137,21 @@ function Seminario() {
                         children: [
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                                 href: "/home",
-                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
                                     className: (_styles_seminario_module_css__WEBPACK_IMPORTED_MODULE_10___default().homeLink),
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_ai__WEBPACK_IMPORTED_MODULE_4__.AiFillHome, {
-                                        size: 24
-                                    })
+                                    children: [
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_ai__WEBPACK_IMPORTED_MODULE_4__.AiFillHome, {
+                                            size: 24
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                            className: (_styles_seminario_module_css__WEBPACK_IMPORTED_MODULE_10___default().homeLinkText),
+                                            children: "In\xedcio"
+                                        })
+                                    ]
                                 })
+                            }),
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: (_styles_seminario_module_css__WEBPACK_IMPORTED_MODULE_10___default().spacer)
                             }),
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
                                 children: "Semin\xe1rio Mulheres"
