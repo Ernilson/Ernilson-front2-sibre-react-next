@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/-UOZVg45P7YbD2jw6aOJ4/_buildManifest.js",
-    "static/-UOZVg45P7YbD2jw6aOJ4/_ssgManifest.js"
+    "static/AH4HBaWrIBqUXLnEZnPDP/_buildManifest.js",
+    "static/AH4HBaWrIBqUXLnEZnPDP/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -17,7 +17,7 @@
       "static/chunks/2e3a845b-8bebae2eb5e450f7.js",
       "static/chunks/664-6863c832d33388a7.js",
       "static/chunks/675-4e523140efdf316c.js",
-      "static/chunks/365-b6a1a1e71ba27c04.js",
+      "static/chunks/365-91e08c1ef0ce6919.js",
       "static/css/795c24583170e509.css",
       "static/chunks/pages/index-5ece7244b2c0e1c4.js"
     ],
@@ -90,7 +90,7 @@
       "static/chunks/2e3a845b-8bebae2eb5e450f7.js",
       "static/chunks/664-6863c832d33388a7.js",
       "static/chunks/675-4e523140efdf316c.js",
-      "static/chunks/365-b6a1a1e71ba27c04.js",
+      "static/chunks/365-91e08c1ef0ce6919.js",
       "static/css/795c24583170e509.css",
       "static/chunks/pages/seminario-02ff5b006799bba2.js"
     ],

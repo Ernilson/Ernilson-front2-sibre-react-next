@@ -24,7 +24,7 @@ function Seminario() {
           <div className={styles.spacer}></div>
           <h1>Seminário Mulheres</h1>
           <h2>De corpo, alma e espírito</h2>
-          <p className={styles.subtitle}>08 de julho de 2024</p>
+          <p className={styles.subtitle}>06 de julho de 2024</p>
         </header>
         <main className={styles.AppMain}>
           <section className={styles.section}>

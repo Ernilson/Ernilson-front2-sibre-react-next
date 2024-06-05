@@ -161,7 +161,7 @@ function Seminario() {
                             }),
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                 className: (_styles_seminario_module_css__WEBPACK_IMPORTED_MODULE_10___default().subtitle),
-                                children: "08 de julho de 2024"
+                                children: "06 de julho de 2024"
                             })
                         ]
                     }),
