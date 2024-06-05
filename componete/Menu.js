@@ -28,7 +28,10 @@ const Menu = () => {
                         </NavItem>
                         <NavItem>
                             <NavLink href="/comunhao">Comunhão</NavLink>
-                        </NavItem>                      
+                        </NavItem>  
+                        <NavItem>
+                            <NavLink href="/seminario">Seminário</NavLink>
+                        </NavItem>                    
                         <NavItem>
                             <NavLink href="/contato">Contato</NavLink>
                         </NavItem>
