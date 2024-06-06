@@ -35,7 +35,7 @@ const Oracao = () => {
         setResponse({ formSave: true })
 
         try {
-            const res = await fetch(`http://sibre2023.com.br/oracao`, {
+            const res = await fetch(`https://sibre2023.com.br/oracao`, {
                 method: `POST`,
                 body: JSON.stringify(oracao),
                 headers: { 'Content-Type': 'application/json' }
