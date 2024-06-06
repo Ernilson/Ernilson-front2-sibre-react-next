@@ -55,7 +55,7 @@ function Seminario() {
                 <p>
                   <strong>Sabrina Braga</strong>
                   <br />
-                  Psicóloga (CU-UDF) pós-graduada em Terapia Cognitivo-Comportamental e <br /> Psicologia Hospitalar.
+                  Psicóloga (CU-UDF) pós-graduada em Terapia <br /> Cognitivo-Comportamental e  Psicologia Hospitalar.
                   <br />
                   Atua como Psicóloga Clínica e Hospitalar (COVID-19, UTI Adulto, <br /> Enfermarias,  Centro Obstétrico e Maternidade)
                   <br />
