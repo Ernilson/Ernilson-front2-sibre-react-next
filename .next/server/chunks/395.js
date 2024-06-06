@@ -208,7 +208,7 @@ function Seminario() {
                                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
                                                             "Presidente Estadual de As Auxiliares (Gide\xf5es Internacionais)",
                                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
-                                                            "Diaconisa e Professora EBD Classe Novos convertidos"
+                                                            "Diaconisa e Professora EBD Classe Novos convertidos."
                                                         ]
                                                     })
                                                 ]
@@ -229,11 +229,15 @@ function Seminario() {
                                                                 children: "Sabrina Braga"
                                                             }),
                                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
-                                                            "Psic\xf3loga (CU-UDF) p\xf3s-graduada em Terapia Cognitivo-Comportamental e Psicologia Hospitalar",
+                                                            "Psic\xf3loga (CU-UDF) p\xf3s-graduada em Terapia Cognitivo-Comportamental e ",
                                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
-                                                            "Atua como Psic\xf3loga Cl\xednica e Hospitalar (COVID-19, UTI Adulto, Enfermarias, Centro Obst\xe9trico e Maternidade)",
+                                                            " Psicologia Hospitalar.",
                                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
-                                                            "Professora de EBD e L\xedder de Jovens"
+                                                            "Atua como Psic\xf3loga Cl\xednica e Hospitalar (COVID-19, UTI Adulto, ",
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
+                                                            " Enfermarias,  Centro Obst\xe9trico e Maternidade)",
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
+                                                            "Professora de EBD e L\xedder de Jovens."
                                                         ]
                                                     })
                                                 ]
@@ -254,13 +258,13 @@ function Seminario() {
                                                                 children: "Monique Batista Nogueira Moura"
                                                             }),
                                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
-                                                            "M\xe9dica Cardiologista e medicina est\xe9tica",
+                                                            "M\xe9dica Cardiologista e medicina est\xe9tica.",
                                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
-                                                            "Ministra palestras sobre sa\xfade e auto cuidado para mulheres sob a perspectiva do evangelho",
+                                                            "Ministra palestras sobre sa\xfade e auto cuidado para mulheres sob a perspectiva do evangelho.",
                                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
-                                                            "Atua como Mission\xe1ria (Igreja Batista Millenium Bras\xedlia), bem como no minist\xe9rio kids e capelania hospitalar",
+                                                            "Atua como Mission\xe1ria (Igreja Batista Millenium Bras\xedlia), bem como no minist\xe9rio kids e capelania hospitalar.",
                                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
-                                                            "M\xe9dica mission\xe1ria nas comunidades ribeirinhas na Amaz\xf4nia em 2023 -  Manaus/Barco\xa0JJ\xa0Mesquita"
+                                                            "M\xe9dica mission\xe1ria nas comunidades ribeirinhas na Amaz\xf4nia em 2023 -  Manaus/Barco\xa0JJ\xa0Mesquita."
                                                         ]
                                                     })
                                                 ]

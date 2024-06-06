@@ -47,7 +47,7 @@ function Seminario() {
                   <br />
                   Presidente Estadual de As Auxiliares (Gideões Internacionais)
                   <br />
-                  Diaconisa e Professora EBD Classe Novos convertidos
+                  Diaconisa e Professora EBD Classe Novos convertidos.
                 </p>
               </div>
               <div className={styles.speaker}>
@@ -55,11 +55,11 @@ function Seminario() {
                 <p>
                   <strong>Sabrina Braga</strong>
                   <br />
-                  Psicóloga (CU-UDF) pós-graduada em Terapia Cognitivo-Comportamental e Psicologia Hospitalar
+                  Psicóloga (CU-UDF) pós-graduada em Terapia Cognitivo-Comportamental e <br /> Psicologia Hospitalar.
                   <br />
-                  Atua como Psicóloga Clínica e Hospitalar (COVID-19, UTI Adulto, Enfermarias, Centro Obstétrico e Maternidade)
+                  Atua como Psicóloga Clínica e Hospitalar (COVID-19, UTI Adulto, <br /> Enfermarias,  Centro Obstétrico e Maternidade)
                   <br />
-                  Professora de EBD e Líder de Jovens
+                  Professora de EBD e Líder de Jovens.
                 </p>
               </div>
               <div className={styles.speaker}>
@@ -67,13 +67,13 @@ function Seminario() {
                 <p>
                   <strong>Monique Batista Nogueira Moura</strong>
                   <br />
-                  Médica Cardiologista e medicina estética
+                  Médica Cardiologista e medicina estética.
                   <br />
-                  Ministra palestras sobre saúde e auto cuidado para mulheres sob a perspectiva do evangelho
+                  Ministra palestras sobre saúde e auto cuidado para mulheres sob a perspectiva do evangelho.
                   <br />
-                  Atua como Missionária (Igreja Batista Millenium Brasília), bem como no ministério kids e capelania hospitalar  
+                  Atua como Missionária (Igreja Batista Millenium Brasília), bem como no ministério kids e capelania hospitalar.  
                   <br />
-                  Médica missionária nas comunidades ribeirinhas na Amazônia em 2023 -  Manaus/Barco JJ Mesquita
+                  Médica missionária nas comunidades ribeirinhas na Amazônia em 2023 -  Manaus/Barco JJ Mesquita.
                 </p>
               </div>              
             </div>
