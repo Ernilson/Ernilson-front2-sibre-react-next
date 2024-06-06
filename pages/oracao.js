@@ -35,7 +35,7 @@ const Oracao = () => {
         setResponse({ formSave: true })
 
         try {
-            const res = await fetch(`https://site-sibre.netlify.app/oracao`, {
+            const res = await fetch(`http://sibre2023.com.br/oracao/gravar`, {
                 method: `POST`,
                 body: JSON.stringify(oracao),
                 headers: { 'Content-Type': 'application/json' }
