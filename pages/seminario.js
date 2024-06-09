@@ -118,7 +118,7 @@ function Seminario() {
       </a>
       <span className={styles.text}>
         <strong>Responsável pelo Evento:</strong> Aline de Moraes Carvalho - Ministério de Mulheres<br />
-        <strong>Telefone:</strong> (61) 98496-9591 <br />
+        <strong>Telefone:</strong> (61) 98530-8920 <br />
       </span>
     </div>
   </div>
