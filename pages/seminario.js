@@ -69,11 +69,15 @@ function Seminario() {
                   <br />
                   Médica Cardiologista e medicina estética.
                   <br />
-                  Ministra palestras sobre saúde e auto cuidado para mulheres sob a perspectiva do evangelho.
+                  Ministra palestras sobre saúde e auto cuidado
+                  <br /> para mulheres sob a perspectiva do evangelho.
                   <br />
-                  Atua como Missionária (Igreja Batista Millenium Brasília), bem como no ministério kids e capelania hospitalar.  
+                  Atua como Missionária (Igreja Batista Millenium Brasília),
+                  <br /> bem como no ministério kids e capelania hospitalar.  
                   <br />
-                  Médica missionária nas comunidades ribeirinhas na Amazônia em 2023 -  Manaus/Barco JJ Mesquita.
+                  Médica missionária nas comunidades ribeirinhas na Amazônia
+                  <br />
+                   em 2023 -  Manaus/Barco JJ Mesquita.
                 </p>
               </div>              
             </div>
