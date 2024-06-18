@@ -41,7 +41,7 @@ const Contato = () => {
         console.log("Iniciando envio da mensagem...");
     
         try {
-            const res = await fetch(`https://sibre2023.com.br/contato`, {
+            const res = await fetch(`http://sibre2023.com.br/contato/gravar`, {
                 method: `POST`,
                 body: JSON.stringify(contato),
                 headers: { 'Content-Type': 'application/json' }
