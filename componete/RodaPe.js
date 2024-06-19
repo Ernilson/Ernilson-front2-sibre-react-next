@@ -70,10 +70,11 @@ const RodaPe = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="https://www.youtube.com/channel/UCWTywd1HwBLG3mpSI5hAmvg" target="_blank">
-                                        <a className="link-rodape">Youtube</a>
+                                    <Link href="https://web.whatsapp.com/" target="_blank">
+                                        <a className="link-rodape">WhatsApp</a>
                                     </Link>
                                 </li>
+                               
                                 <li>
                                     <Link href="https://goo.gl/maps/nB3GEHK9yLHAeEYx8" target="_blank">
                                         <a className="link-rodape">Localização</a>

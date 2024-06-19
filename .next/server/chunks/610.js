@@ -148,11 +148,11 @@ const RodaPe = ()=>{
                                             }),
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
-                                                    href: "https://www.youtube.com/channel/UCWTywd1HwBLG3mpSI5hAmvg",
+                                                    href: "https://web.whatsapp.com/",
                                                     target: "_blank",
                                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                                         className: "link-rodape",
-                                                        children: "Youtube"
+                                                        children: "WhatsApp"
                                                     })
                                                 })
                                             }),
