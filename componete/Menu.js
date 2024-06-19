@@ -40,7 +40,7 @@ const Menu = () => {
                         </NavItem>
 
                     </Nav>                   
-                    <NavbarBrand href="http://207.244.238.40:15521">Adminstrativo</NavbarBrand>
+                    <NavbarBrand href="https://sibre2023.com.br/">Adminstrativo</NavbarBrand>
                 </Collapse>
                 </Container>
             </Navbar>
