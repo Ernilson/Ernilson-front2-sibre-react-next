@@ -11,15 +11,15 @@ const Oracao = () => {
         nome: '',
         email: '',
         msg: ''
-    });
-
-    const onchangeInput = e => setOracao({ ...oracao, [e.target.name]: e.target.value });
+    });   
 
     const [response, setResponse] = useState({
         formSave: false,
         type: '',
         message: ''
     });
+
+    const onchangeInput = e => setOracao({ ...oracao, [e.target.name]: e.target.value });
 
     const limparCampos = () => {
         setOracao({
@@ -28,6 +28,7 @@ const Oracao = () => {
             msg: ''
         });
       };
+
     const envMsg = async e => {
         e.preventDefault();
         console.log(oracao);
@@ -35,7 +36,7 @@ const Oracao = () => {
         setResponse({ formSave: true })
 
         try {
-            const res = await fetch(`https://sibre2023.com.br/oracao`, {
+            const res = await fetch(`https://sibre2023.com.br/oracao/gravar`, {
                 method: `POST`,
                 body: JSON.stringify(oracao),
                 headers: { 'Content-Type': 'application/json' }

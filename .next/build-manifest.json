@@ -1,34 +1,109 @@
 {
   "polyfillFiles": [
-    "static/chunks/polyfills.js"
+    "static/chunks/polyfills-c67a75d1b6f99dc8.js"
   ],
-  "devFiles": [
-    "static/chunks/react-refresh.js"
-  ],
-  "ampDevFiles": [
-    "static/chunks/webpack.js",
-    "static/chunks/amp.js"
-  ],
+  "devFiles": [],
+  "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/development/_buildManifest.js",
-    "static/development/_ssgManifest.js"
+    "static/nx9emjWBVUMW64aK-JdIA/_buildManifest.js",
+    "static/nx9emjWBVUMW64aK-JdIA/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
+    "/": [
+      "static/chunks/webpack-69bfa6990bb9e155.js",
+      "static/chunks/framework-e70c6273bfe3f237.js",
+      "static/chunks/main-748fa114995cf5e9.js",
+      "static/chunks/2e3a845b-8bebae2eb5e450f7.js",
+      "static/chunks/664-6863c832d33388a7.js",
+      "static/chunks/675-4e523140efdf316c.js",
+      "static/chunks/24-cd2be1e58537e787.js",
+      "static/css/795c24583170e509.css",
+      "static/chunks/pages/index-23ffb4c4ce36952d.js"
+    ],
     "/_app": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/_app.js"
+      "static/chunks/webpack-69bfa6990bb9e155.js",
+      "static/chunks/framework-e70c6273bfe3f237.js",
+      "static/chunks/main-748fa114995cf5e9.js",
+      "static/css/d8b198d9bf28a8f5.css",
+      "static/chunks/pages/_app-9947098eb577938d.js"
     ],
     "/_error": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/_error.js"
+      "static/chunks/webpack-69bfa6990bb9e155.js",
+      "static/chunks/framework-e70c6273bfe3f237.js",
+      "static/chunks/main-748fa114995cf5e9.js",
+      "static/chunks/pages/_error-a4ba2246ff8fb532.js"
+    ],
+    "/acao_social": [
+      "static/chunks/webpack-69bfa6990bb9e155.js",
+      "static/chunks/framework-e70c6273bfe3f237.js",
+      "static/chunks/main-748fa114995cf5e9.js",
+      "static/chunks/664-6863c832d33388a7.js",
+      "static/chunks/836-c26aa643e780f4e4.js",
+      "static/chunks/pages/acao_social-7e877c717fd5b42b.js"
+    ],
+    "/apoio_Psicologico": [
+      "static/chunks/webpack-69bfa6990bb9e155.js",
+      "static/chunks/framework-e70c6273bfe3f237.js",
+      "static/chunks/main-748fa114995cf5e9.js",
+      "static/chunks/664-6863c832d33388a7.js",
+      "static/chunks/836-c26aa643e780f4e4.js",
+      "static/chunks/pages/apoio_Psicologico-5df96815046bc87a.js"
+    ],
+    "/comunhao": [
+      "static/chunks/webpack-69bfa6990bb9e155.js",
+      "static/chunks/framework-e70c6273bfe3f237.js",
+      "static/chunks/main-748fa114995cf5e9.js",
+      "static/chunks/664-6863c832d33388a7.js",
+      "static/chunks/836-c26aa643e780f4e4.js",
+      "static/chunks/675-4e523140efdf316c.js",
+      "static/css/3cad9b25722545d5.css",
+      "static/chunks/pages/comunhao-167a0e61da182dbd.js"
+    ],
+    "/contato": [
+      "static/chunks/webpack-69bfa6990bb9e155.js",
+      "static/chunks/framework-e70c6273bfe3f237.js",
+      "static/chunks/main-748fa114995cf5e9.js",
+      "static/chunks/836-c26aa643e780f4e4.js",
+      "static/chunks/675-4e523140efdf316c.js",
+      "static/chunks/702-2766480aa4b3ccb9.js",
+      "static/css/7a63bac573b1651e.css",
+      "static/chunks/pages/contato-0bd8cae298aa1b86.js"
     ],
     "/home": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/home.js"
+      "static/chunks/webpack-69bfa6990bb9e155.js",
+      "static/chunks/framework-e70c6273bfe3f237.js",
+      "static/chunks/main-748fa114995cf5e9.js",
+      "static/chunks/664-6863c832d33388a7.js",
+      "static/chunks/836-c26aa643e780f4e4.js",
+      "static/chunks/pages/home-329e4967a80683ff.js"
+    ],
+    "/oracao": [
+      "static/chunks/webpack-69bfa6990bb9e155.js",
+      "static/chunks/framework-e70c6273bfe3f237.js",
+      "static/chunks/main-748fa114995cf5e9.js",
+      "static/chunks/664-6863c832d33388a7.js",
+      "static/chunks/836-c26aa643e780f4e4.js",
+      "static/chunks/pages/oracao-80bd0bfea0d74fa8.js"
+    ],
+    "/seminario": [
+      "static/chunks/webpack-69bfa6990bb9e155.js",
+      "static/chunks/framework-e70c6273bfe3f237.js",
+      "static/chunks/main-748fa114995cf5e9.js",
+      "static/chunks/2e3a845b-8bebae2eb5e450f7.js",
+      "static/chunks/664-6863c832d33388a7.js",
+      "static/chunks/675-4e523140efdf316c.js",
+      "static/chunks/24-cd2be1e58537e787.js",
+      "static/css/795c24583170e509.css",
+      "static/chunks/pages/seminario-d4cec748b1087e98.js"
+    ],
+    "/sobre": [
+      "static/chunks/webpack-69bfa6990bb9e155.js",
+      "static/chunks/framework-e70c6273bfe3f237.js",
+      "static/chunks/main-748fa114995cf5e9.js",
+      "static/chunks/664-6863c832d33388a7.js",
+      "static/chunks/836-c26aa643e780f4e4.js",
+      "static/chunks/pages/sobre-7c67b084c09de170.js"
     ]
   },
   "ampFirstPages": []

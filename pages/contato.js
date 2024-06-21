@@ -170,14 +170,14 @@ const Contato = () => {
                         <div className="col-md-6">
                             <br />
                             <h3 className="featurette-heading">Contribua com o Reino </h3>
-                            <p className="lead">Banco-PagSeguro: Nº-290, Agência: 0001, Conta: 051116937,
-                                Tipo: Conta de Pagamento, pix CNPJ: 186855200001/40 - Pix:sibre25@gmail.com</p>
+                            <p className="lead">Mercado Pago,
+                                Tipo: Conta de Pagamento, pix CNPJ: 186855200001/40 - Pix Email: sibre25@gmail.com</p>
                             <hr />
                             <address>
                                 <strong>Endereço</strong><br />
                                 Quadra 105 Area Especial 01 <br />
                                 Av. Vargem das Benção Recanto das Emas- DF<br />
-                                (61)991323236 <br />
+                                CEP: 72601120 - Tel (61) 991323236 <br />
                             </address>
                         </div>
                     </div>

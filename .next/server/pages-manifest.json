@@ -1,6 +1,15 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
+  "/apoio_Psicologico": "pages/apoio_Psicologico.html",
+  "/comunhao": "pages/comunhao.html",
+  "/contato": "pages/contato.html",
+  "/home": "pages/home.html",
+  "/oracao": "pages/oracao.html",
+  "/": "pages/index.html",
+  "/seminario": "pages/seminario.html",
+  "/sobre": "pages/sobre.html",
+  "/acao_social": "pages/acao_social.html",
   "/_document": "pages/_document.js",
-  "/home": "pages/home.js"
+  "/404": "pages/404.html"
 }
