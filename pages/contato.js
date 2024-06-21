@@ -170,8 +170,8 @@ const Contato = () => {
                         <div className="col-md-6">
                             <br />
                             <h3 className="featurette-heading">Contribua com o Reino </h3>
-                            <p className="lead">Mercado Pago,
-                                Tipo: Conta de Pagamento, pix CNPJ: 186855200001/40 - Pix Email: sibre25@gmail.com</p>
+                            <p className="lead">Banco: 323 Mercado Pago - Agência: 0001 Conta: 88333095615,
+                                pix CNPJ: 186855200001/40 - Pix Email: sibre25@gmail.com</p>
                             <hr />
                             <address>
                                 <strong>Endereço</strong><br />
