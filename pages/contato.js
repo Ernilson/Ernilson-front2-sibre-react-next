@@ -177,7 +177,7 @@ const Contato = () => {
                                 <strong>Endereço</strong><br />
                                 Quadra 105 Area Especial 01 <br />
                                 Av. Vargem das Benção Recanto das Emas- DF<br />
-                                CEP: 72601120 - Tel (61) 991323236 - (61) 3333727<br />
+                                CEP: 72601120 - Tel (61) 991323236 - (61) 33337274<br />
                             </address>
                         </div>
                     </div>
