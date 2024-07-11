@@ -1,8 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
-import Seminario from './seminario.js'; 
+import Home from './home';
 
-const Home = ({ data }) => {
+const HomePage = ({ data }) => {
     return (
         <div>
             <Head>
@@ -11,9 +11,9 @@ const Home = ({ data }) => {
                 <meta name="description" content="Site da Segunda Igreja Batista no Recanto das Emas-DF"></meta>
                 <meta name="author" content="Ernilson Daniel Lima de Souza" />
             </Head>           
-            <Seminario />           
+            <Home />           
         </div>
     );
 }
 
-export default Home;
+export default HomePage;

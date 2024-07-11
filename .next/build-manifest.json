@@ -1,34 +1,100 @@
 {
   "polyfillFiles": [
-    "static/chunks/polyfills.js"
+    "static/chunks/polyfills-c67a75d1b6f99dc8.js"
   ],
-  "devFiles": [
-    "static/chunks/react-refresh.js"
-  ],
-  "ampDevFiles": [
-    "static/chunks/webpack.js",
-    "static/chunks/amp.js"
-  ],
+  "devFiles": [],
+  "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/development/_buildManifest.js",
-    "static/development/_ssgManifest.js"
+    "static/8v3DQiswuv2mkg-QMUs2p/_buildManifest.js",
+    "static/8v3DQiswuv2mkg-QMUs2p/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
+    "/": [
+      "static/chunks/webpack-69bfa6990bb9e155.js",
+      "static/chunks/framework-e70c6273bfe3f237.js",
+      "static/chunks/main-748fa114995cf5e9.js",
+      "static/chunks/466-349a5fece6b1ce6e.js",
+      "static/chunks/993-2797ed38660340bb.js",
+      "static/chunks/pages/index-d6814df2a26d092a.js"
+    ],
     "/_app": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/_app.js"
+      "static/chunks/webpack-69bfa6990bb9e155.js",
+      "static/chunks/framework-e70c6273bfe3f237.js",
+      "static/chunks/main-748fa114995cf5e9.js",
+      "static/css/d8b198d9bf28a8f5.css",
+      "static/chunks/pages/_app-9947098eb577938d.js"
     ],
     "/_error": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/_error.js"
+      "static/chunks/webpack-69bfa6990bb9e155.js",
+      "static/chunks/framework-e70c6273bfe3f237.js",
+      "static/chunks/main-748fa114995cf5e9.js",
+      "static/chunks/pages/_error-a4ba2246ff8fb532.js"
+    ],
+    "/acao_social": [
+      "static/chunks/webpack-69bfa6990bb9e155.js",
+      "static/chunks/framework-e70c6273bfe3f237.js",
+      "static/chunks/main-748fa114995cf5e9.js",
+      "static/chunks/466-349a5fece6b1ce6e.js",
+      "static/chunks/pages/acao_social-e5fd20f68f7373b2.js"
+    ],
+    "/apoio_Psicologico": [
+      "static/chunks/webpack-69bfa6990bb9e155.js",
+      "static/chunks/framework-e70c6273bfe3f237.js",
+      "static/chunks/main-748fa114995cf5e9.js",
+      "static/chunks/466-349a5fece6b1ce6e.js",
+      "static/chunks/pages/apoio_Psicologico-5df3e47ceccc47de.js"
+    ],
+    "/comunhao": [
+      "static/chunks/webpack-69bfa6990bb9e155.js",
+      "static/chunks/framework-e70c6273bfe3f237.js",
+      "static/chunks/main-748fa114995cf5e9.js",
+      "static/chunks/466-349a5fece6b1ce6e.js",
+      "static/chunks/675-4e523140efdf316c.js",
+      "static/css/3cad9b25722545d5.css",
+      "static/chunks/pages/comunhao-9d83db26e9f06ecd.js"
+    ],
+    "/contato": [
+      "static/chunks/webpack-69bfa6990bb9e155.js",
+      "static/chunks/framework-e70c6273bfe3f237.js",
+      "static/chunks/main-748fa114995cf5e9.js",
+      "static/chunks/466-349a5fece6b1ce6e.js",
+      "static/chunks/675-4e523140efdf316c.js",
+      "static/chunks/240-0c35180a48083989.js",
+      "static/css/7a63bac573b1651e.css",
+      "static/chunks/pages/contato-26485d408d74b43a.js"
     ],
     "/home": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/home.js"
+      "static/chunks/webpack-69bfa6990bb9e155.js",
+      "static/chunks/framework-e70c6273bfe3f237.js",
+      "static/chunks/main-748fa114995cf5e9.js",
+      "static/chunks/466-349a5fece6b1ce6e.js",
+      "static/chunks/993-2797ed38660340bb.js",
+      "static/chunks/pages/home-29f585bca0bf65a2.js"
+    ],
+    "/oracao": [
+      "static/chunks/webpack-69bfa6990bb9e155.js",
+      "static/chunks/framework-e70c6273bfe3f237.js",
+      "static/chunks/main-748fa114995cf5e9.js",
+      "static/chunks/466-349a5fece6b1ce6e.js",
+      "static/chunks/148-094a348cdca1a0c6.js",
+      "static/chunks/pages/oracao-f3bb46159f29f4ca.js"
+    ],
+    "/seminario": [
+      "static/chunks/webpack-69bfa6990bb9e155.js",
+      "static/chunks/framework-e70c6273bfe3f237.js",
+      "static/chunks/main-748fa114995cf5e9.js",
+      "static/chunks/2e3a845b-8bebae2eb5e450f7.js",
+      "static/chunks/675-4e523140efdf316c.js",
+      "static/css/795c24583170e509.css",
+      "static/chunks/pages/seminario-9a6347dbac0b313a.js"
+    ],
+    "/sobre": [
+      "static/chunks/webpack-69bfa6990bb9e155.js",
+      "static/chunks/framework-e70c6273bfe3f237.js",
+      "static/chunks/main-748fa114995cf5e9.js",
+      "static/chunks/466-349a5fece6b1ce6e.js",
+      "static/chunks/pages/sobre-d7c21778d47ae41f.js"
     ]
   },
   "ampFirstPages": []
