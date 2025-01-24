@@ -50,8 +50,9 @@ function Home({ data }) {
                         display: none; /* Oculta o parágrafo */
                     }
 
-                    .descr-top h2 {
-                        font-size: 1.5rem; /* Reduz o tamanho da fonte do título */
+                    .descr-top h1 {
+                        font-size: 2.0rem; /* Reduz o tamanho da fonte do título */
+                        margin-top: 20px;
                     }
 
                     .descr-top a {
@@ -59,17 +60,13 @@ function Home({ data }) {
                         padding: 0.5rem 1rem; /* Ajusta o tamanho interno do botão */
                     }
                 }
-
-                @media (max-width: 576px) { /* Para telas menores que 576px */
-                    .descr-top {
-                        height: 180px; /* Reduz ainda mais a altura */
-                    }
-
-                    .descr-top h1 {
-                        margin-top: 45px; /* Margem menor no título em telas muito pequenas */
-                        font-size: 1.2rem; /* Tamanho menor para o título */
-                    }
-                }
+             
+                @media (max-width: 768px) { /* Ajuste para telas menores, como celulares */    
+                .col-lg-4 {
+                    text-align: center; /* Garante que o conteúdo nas colunas esteja centralizado */
+                    margin-bottom: 50px; /* Ajusta a margem inferior para reduzir o espaçamento */
+                }   
+             
             `}</style>
                 <Container>
                     <style>{`
@@ -86,83 +83,48 @@ function Home({ data }) {
             </Jumbotron>
 
             <Jumbotron fluid className="servicos">
-                <style>{`
-        .servicos {
+                <style>{`.servicos{
             padding-top: 20px;
-            padding-bottom: 60px;
+            padding-buttom:60px;
             background: #FFF;
-            margin-bottom: 0 !important;
-        }
+            margin-bottom: 0ren ! important;
 
-        .circulo1, .circulo2, .circulo3 {
+            }.circulo1{
             width: 200px;
             height: 200px;
-            background-size: cover;
-            background-position: center;
-            border-radius: 50%; /* Torna os elementos circulares */
-            margin: 0 auto; /* Centraliza os círculos */
-        }
-
-        .centralizar, .centralizar2, .centralizar3 {
+            background-image: url(/templo_interno.jpg);           
+            }.centralizar{
+            margin: 0 auto !important;
             float: none !important;
-        }
 
-        @media (max-width: 992px) { /* Ajuste para tablets */
-            .circulo1, .circulo2, .circulo3 {
-                width: 150px; /* Reduz o tamanho dos círculos */
-                height: 150px;
-            }
+            }.circulo2{
+            width: 200px;
+            height: 200px;
+            background-image: url(/cesta.png);
+            }.centralizar2{
+            margin: 0 auto !important;
+            float: none !important;
 
-            .col-lg-4 {
-                margin-bottom: 15px; /* Reduz o espaço entre as colunas */
-            }
-
-            .btn-light {
-                height: auto; /* Ajusta a altura do botão para se ajustar ao conteúdo */
-            }
-        }
-
-        @media (max-width: 768px) { /* Ajuste para telas menores, como celulares */
-            .circulo1, .circulo2, .circulo3 {
-                width: 120px; /* Menor ainda para telas pequenas */
-                height: 120px;
-            }
-
-            .col-lg-4 {
-                text-align: center; /* Garante que o conteúdo nas colunas esteja centralizado */
-                margin-bottom: 10px; /* Ajusta a margem inferior para reduzir o espaçamento */
-            }
-
-            .btn-light {
-                height: auto; /* Ajusta os botões */
-                padding: 1rem; /* Adiciona um pouco de espaçamento dentro dos botões */
-            }
-
-            p {
-                font-size: 0.9rem; /* Reduz o tamanho da fonte do texto em dispositivos pequenos */
-            }
-
-            /* Ajusta o link para o tamanho do conteúdo nas telas pequenas */
-            .btn-light a {
-                display: inline-block; /* Faz o link se ajustar ao conteúdo */
-                width: auto; /* Ajusta a largura conforme o conteúdo */
-                padding: 0.5rem 1rem; /* Ajusta o espaçamento ao redor do texto */
-                text-align: center; /* Garante que o texto esteja centralizado dentro do link */
-                box-sizing: border-box; /* Garante que o padding não afete o tamanho total */
-            }
-        }
-    `}</style>
+            }.circulo3{
+            width: 200px;
+            height: 200px;
+            background-image: url(/psicologo.png);
+            }.centralizar3{
+            margin: 0 auto !important;
+            float: none !important;
+            }`}</style>
 
                 <Container className="text-center">
                     <div>
-                        <p>Resumo das nossas atividades</p>
+                <p>Resumo das nossas atividades</p>
+
                     </div>
                     <div className="row">
-                        <div className="col-lg-4 col-md-6 col-12">
-                            <div className="rounded-circle circulo1 centralizar" style={{ backgroundImage: 'url(/templo_interno.jpg)' }} />
+                        <div className="col-lg-4">
+                            <div className="rounded-circle circulo1 centralizar" />
                             <h2 className="mt-4 mb-4">Nossos Encontros</h2>
                             <Link href="/comunhao">
-                                <a className="btn btn-light" style={{ textAlign: 'center', display: 'block', height: 225 }}>
+                                <a className="btn btn-light" style={{ textAlign: 'center', display: 'block' }}>
                                     <p style={{ margin: 0 }}>
                                         Viver em comunhão é uma marca da nossa comunidade. Venha ser igreja com a gente!
                                     </p>
@@ -177,32 +139,30 @@ function Home({ data }) {
                                 </a>
                             </Link>
                         </div>
-                        <div className="col-lg-4 col-md-6 col-12">
-                            <div className="rounded-circle circulo2 centralizar2" style={{ backgroundImage: 'url(/cesta.png)' }} />
+                        <div className="col-lg-4">
+                            <div className="rounded-circle circulo2 centralizar2" />
                             <h2 className="mt-4 mb-4">Ação Social</h2>
                             <Link href="/acao_social">
-                                <a style={{ height: 225 }} className="btn btn-light">
-                                    <p>Ajudar como Cristo ajudaria e amar como Ele nos ama é a missão do ministério de Ação Social. Seja servindo com doação de alimentos ou roupas, trabalhamos para socorrer ao próximo em sua necessidade.</p>
-                                </a>
+                                <a className="btn btn-light"><p>Ajudar como Cristo ajudaria e amar como Ele nos ama é a missão do ministério de Ação Social. Seja servindo com doação de alimentos ou roupas, trabalhamos para socorrer ao próximo em sua necessidade.
+
+                                </p></a>
                             </Link>
                         </div>
-                        <div className="col-lg-4 col-md-6 col-12">
-                            <div className="rounded-circle circulo3 centralizar3" style={{ backgroundImage: 'url(/jiu-jitsu.jpg)' }} />
+                        <div className="col-lg-4">
+                            <div className="rounded-circle circulo3 centralizar3" />
                             <h2 className="mt-4 mb-4">Projeto Jiu-Jitsu</h2>
                             <Link href="/apoio_Psicologico">
-                                <a className="btn btn-light">
-                                    <p>A igreja oferece aulas gratuitas de Jiu-Jitsu para a comunidade, promovendo saúde, disciplina e inclusão. Durante as aulas, os alunos também têm a oportunidade de ouvir a Palavra de Deus, fortalecendo a fé e os valores como respeito e trabalho em equipe. Participe e faça parte dessa iniciativa que transforma vidas!</p>
-                                </a>
+                                <a className="btn btn-light"><p>A igreja oferece aulas gratuitas de Jiu-Jitsu para a comunidade, promovendo saúde, disciplina e inclusão. Durante as aulas, os alunos também têm a oportunidade de ouvir a Palavra de Deus, fortalecendo a fé e os valores como respeito e trabalho em equipe. Participe e faça parte dessa iniciativa que transforma vidas!.</p></a>
                             </Link>
                         </div>
-                    </div>
+                    </div>                   
                 </Container>
                 <Link href="/comunhao">
-                    <p style={{ color: 'blue', textDecoration: 'underline', cursor: 'pointer', textAlign: 'center', marginTop: '20px' }}>
-                        Clique aqui para saber mais...
-                    </p>
-                </Link>
-            </Jumbotron>
+                        <p style={{ color: 'blue', textDecoration: 'underline', cursor: 'pointer', textAlign: 'center',  marginTop: '20px'  }}>
+                            Clique aqui para saber mais...
+                        </p>
+                    </Link>
+            </Jumbotron>   
             <RodaPe />
         </div>
     );

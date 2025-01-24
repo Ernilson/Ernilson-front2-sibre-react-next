@@ -142,7 +142,7 @@ const Oracao = () => {
                             <strong>Encontros de oração</strong><br /><br />
                             <p>Nossos encontros de oração ocorre nas terças-feiras às 07:00, e nas quartas às 20:00. Nessas reuniões, nossa 
                             equipe de oração estará intercedendo por seus pedidos no altar, clamando ao Deus Altíssimo. Portanto, 
-                            <strong>faça seu pedido e conte com o apoio da nossa igreja.</strong></p>
+                            <strong> faça seu pedido e conte com o apoio da nossa igreja.</strong></p>
                             Pedi, e dar-se-vos-á; buscai, e encontrareis; batei, e abrir-se-vos-á...<br />
                             Mateus 7:7 <br />
                         </address>
