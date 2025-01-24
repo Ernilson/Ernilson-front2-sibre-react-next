@@ -1,0 +1,59 @@
+/* styles/home.module.css */
+
+.descr-top {
+    background-image: url(/sibre2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /* Garante que a imagem ocupe toda a largura */
+    background-position: center; /* Centraliza a imagem */
+    height: 250px; /* Altura padrão */
+    color: #FFF; /* Contraste para o texto */
+    text-align: center;
+    margin-bottom: 0rem !important;
+    overflow: hidden; /* Oculta partes fora do contêiner */
+    background-color: rgba(23, 162, 184, 0.6); /* Azul claro com transparência */
+    background-blend-mode: overlay; /* Combina o fundo azul com a imagem */
+    opacity: 0.6; /* Transparência geral */
+}
+
+.descr-top * {
+    opacity: 1; /* Texto visível */
+}
+
+@media (max-width: 768px) { /* Para telas menores que 768px */
+    .descr-top {
+        height: 200px; /* Diminui a altura */
+        padding-top: 20px; /* Ajusta o espaçamento interno */
+    }
+
+    .descr-top p {
+        display: none; /* Oculta o parágrafo */
+    }
+
+    .descr-top h2 {
+        font-size: 1.5rem; /* Reduz o tamanho da fonte do título */
+    }
+
+    .descr-top a {
+        font-size: 0.9rem; /* Diminui o botão */
+        padding: 0.5rem 1rem; /* Ajusta o tamanho interno do botão */
+    }
+}
+
+@media (max-width: 576px) { /* Para telas menores que 576px */
+    .descr-top {
+        height: 180px; /* Reduz ainda mais a altura */
+    }
+
+    .descr-top h1 {
+        margin-top: 45px; /* Margem menor no título em telas muito pequenas */
+        font-size: 1.2rem; /* Tamanho menor para o título */
+    }
+}
+
+h1.display-5 {
+    font-weight: 600; /* Torna o texto mais grosso (negrito mais intenso) */
+}
+
+p.lead {
+    font-style: italic; /* Aplica itálico no texto do parágrafo */
+}

@@ -7,74 +7,43 @@ const RodaPe = () => {
         <div>
             <Jumbotron fluid className="rodape">
                 <style>{`.rodape{
-	padding-top: 30px;
-	padding-bottom: 30px;
-	background-color: #14A1A7;
-	marging-bottom: 0rem important;
-	color: #fff;
+                    padding-top: 10px; /* Ajusta a altura do rodapé */
+                    padding-bottom: 10px; /* Ajusta a altura do rodapé */
+                    background-color: #17A2B8;
+                    margin-bottom: 0rem !important;
+                    color: #fff;
+                    text-align: center;
+                }
+                .rodape ul{
+                    padding-left: 0; /* Remove a margem padrão da lista */
+                }
+                .rodape ul li{
+                    display: inline-block; /* Alinha os itens horizontalmente */
+                    margin: 0 10px; /* Adiciona espaçamento entre os itens */
                 }
                 .rodape ul li a.link-rodape{
-                    color:#fff !important;
-                }.rodape ul li a.link-rodape:hover{
-                        color:green !important;
-                        text-decoration: none;
+                    color: #fff !important;
+                    display: block;
+                    padding: 5px 10px;
+                }
+                .rodape ul li a.link-rodape:hover{
+                    color: green !important;
+                    text-decoration: none;
                 }`}</style>
                 <Container>
-                    <div className="row">
-                        <div className="col-12 col-sm-12 col-md-4">
-                            <h6>Sibre</h6>
+                    <div className="row justify-content-center">
+                        <div className="col-12">
                             <ul className="list-unstyled">
                                 <li>
-                                    <Link href="/">
-                                        <a className="link-rodape">Home</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/oracao">
-                                        <a className="link-rodape">Apoio Espiritual</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/sobre">
-                                        <a className="link-rodape">Sobre</a>
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="col-12 col-sm-12 col-md-4">
-                            <h6>Contato</h6>
-                            <ul className="list-unstyled">
-                                <li>
-                                    <Link href="/contato">
-                                        <a className="link-rodape">CNPJ:186855200001/40</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="tel:61991323236">
-                                        <a className="link-rodape">(61)99132-3236</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="https://goo.gl/maps/nB3GEHK9yLHAeEYx8" target="_blank">
-                                        <a className="link-rodape">Areá Esp.01 - Rec.Das Emas/DF</a>
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="col-12 col-sm-12 col-md-4">
-                            <h6>Redes Sociais</h6>
-                            <ul className="list-unstyled">
-                                <li>
-                                    <Link href="https://www.instagram.com/sibrecanto/?hl=pt-br" target="_blank">
+                                    <Link href="https://www.instagram.com/sibre.oficial/" target="_blank">
                                         <a className="link-rodape">Instagram</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="https://web.whatsapp.com/" target="_blank">
+                                    <Link href="https://api.whatsapp.com/send?phone=5561999178363" target="_blank">
                                         <a className="link-rodape">WhatsApp</a>
                                     </Link>
                                 </li>
-                               
                                 <li>
                                     <Link href="https://goo.gl/maps/nB3GEHK9yLHAeEYx8" target="_blank">
                                         <a className="link-rodape">Localização</a>
@@ -90,3 +59,4 @@ const RodaPe = () => {
 }
 
 export default RodaPe;
+

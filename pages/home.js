@@ -15,103 +15,196 @@ function Home({ data }) {
                 <title>Sibre</title>
                 <meta name='robots' content='index, follow' />
                 <meta name="description" content="Site da Segunda Igreja Batista no Recanto das Emas-DF"></meta>
-                <meta name="author" content="Ernilson Daniel Lima de Souza" />
+                <meta name="authores" content="Ernilson Daniel Lima de Souza" />
 
             </Head>
             <Menu />
             <Jumbotron fluid className="descr-top">
-                <style>{`.descr-top{
-                background-image: url(/month.jpg);
-                background-repeat: no-repeat;
-                background-position: center;
-                padding-top: 100px;
-                padding-buttom:80px;
-                color: #FFF;
-                text-align: center;
-                margin-bottom: 0ren ! important;                
-            }`}</style>
-                <Container><h2 className="display-5">Um lugar de comunhão, louvor e adoração a Deus</h2>
-                    <p className="lead mb-4">Buscar-me-eis e me achareis quando me buscardes de todo o vosso coração." Jeremias 29:12-13!"</p>
-                    <Link href="/contato">
-                        <a className="btn btn-outline-light btn-lg">Entre em Contato</a>
-                    </Link>
+                <style>{`
+                .descr-top {
+                    background-image: url(/sibre2.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover; /* Garante que a imagem ocupe toda a largura */
+                    background-position: center; /* Centraliza a imagem */
+                    height: 250px; /* Altura padrão */
+                    color: #FFF; /* Contraste para o texto */
+                    text-align: center;
+                    margin-bottom: 0rem !important;
+                    overflow: hidden; /* Oculta partes fora do contêiner */
+                    background-color: rgba(23, 162, 184, 0.6); /* Azul claro com transparência */
+                    background-blend-mode: overlay; /* Combina o fundo azul com a imagem */
+                    opacity: 0.6; /* Transparência geral */
+                }
+
+                .descr-top * {
+                    opacity: 1; /* Texto visível */
+                }
+
+                @media (max-width: 768px) { /* Para telas menores que 768px */
+                    .descr-top {
+                        height: 200px; /* Diminui a altura */
+                        padding-top: 20px; /* Ajusta o espaçamento interno */
+                    }
+
+                    .descr-top p {
+                        display: none; /* Oculta o parágrafo */
+                    }
+
+                    .descr-top h2 {
+                        font-size: 1.5rem; /* Reduz o tamanho da fonte do título */
+                    }
+
+                    .descr-top a {
+                        font-size: 0.9rem; /* Diminui o botão */
+                        padding: 0.5rem 1rem; /* Ajusta o tamanho interno do botão */
+                    }
+                }
+
+                @media (max-width: 576px) { /* Para telas menores que 576px */
+                    .descr-top {
+                        height: 180px; /* Reduz ainda mais a altura */
+                    }
+
+                    .descr-top h1 {
+                        margin-top: 45px; /* Margem menor no título em telas muito pequenas */
+                        font-size: 1.2rem; /* Tamanho menor para o título */
+                    }
+                }
+            `}</style>
+                <Container>
+                    <style>{`
+                h1.display-5 {
+                    font-weight: 600; /* Torna o texto mais grosso (negrito mais intenso) */
+                }
+                p.lead {
+                    font-style: italic; /* Aplica itálico no texto do parágrafo */
+                }
+            `}</style>
+                    <br></br><h1 className="display-5">Segunda Igreja Batista no Recanto das Emas</h1>
+                    <p className="lead pb-4">Um lugar de comunhão, louvor e adoração a Deus.</p>
                 </Container>
             </Jumbotron>
 
             <Jumbotron fluid className="servicos">
-                <style>{`.servicos{
-            padding-top: 10px;
-            padding-buttom:60px;
+                <style>{`
+        .servicos {
+            padding-top: 20px;
+            padding-bottom: 60px;
             background: #FFF;
-            margin-bottom: 0ren ! important;
+            margin-bottom: 0 !important;
+        }
 
-            }.circulo1{
-            width:140px;
-            height: 140px;
-            background-image: url(/CultoPrLaci2.jpg);           
-            }.centralizar{
-            margin: 0 auto !important;
-            float: none !important;
+        .circulo1, .circulo2, .circulo3 {
+            width: 200px;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%; /* Torna os elementos circulares */
+            margin: 0 auto; /* Centraliza os círculos */
+        }
 
-            }.circulo2{
-            width:140px;
-            height: 140px;
-            background-image: url(/nino2.png);
-            }.centralizar2{
-            margin: 0 auto !important;
+        .centralizar, .centralizar2, .centralizar3 {
             float: none !important;
+        }
 
-            }.circulo3{
-            width:140px;
-            height: 140px;
-            background-image: url(/psicologo.png);
-            }.centralizar3{
-            margin: 0 auto !important;
-            float: none !important;
-            }`}</style>
+        @media (max-width: 992px) { /* Ajuste para tablets */
+            .circulo1, .circulo2, .circulo3 {
+                width: 150px; /* Reduz o tamanho dos círculos */
+                height: 150px;
+            }
+
+            .col-lg-4 {
+                margin-bottom: 15px; /* Reduz o espaço entre as colunas */
+            }
+
+            .btn-light {
+                height: auto; /* Ajusta a altura do botão para se ajustar ao conteúdo */
+            }
+        }
+
+        @media (max-width: 768px) { /* Ajuste para telas menores, como celulares */
+            .circulo1, .circulo2, .circulo3 {
+                width: 120px; /* Menor ainda para telas pequenas */
+                height: 120px;
+            }
+
+            .col-lg-4 {
+                text-align: center; /* Garante que o conteúdo nas colunas esteja centralizado */
+                margin-bottom: 10px; /* Ajusta a margem inferior para reduzir o espaçamento */
+            }
+
+            .btn-light {
+                height: auto; /* Ajusta os botões */
+                padding: 1rem; /* Adiciona um pouco de espaçamento dentro dos botões */
+            }
+
+            p {
+                font-size: 0.9rem; /* Reduz o tamanho da fonte do texto em dispositivos pequenos */
+            }
+
+            /* Ajusta o link para o tamanho do conteúdo nas telas pequenas */
+            .btn-light a {
+                display: inline-block; /* Faz o link se ajustar ao conteúdo */
+                width: auto; /* Ajusta a largura conforme o conteúdo */
+                padding: 0.5rem 1rem; /* Ajusta o espaçamento ao redor do texto */
+                text-align: center; /* Garante que o texto esteja centralizado dentro do link */
+                box-sizing: border-box; /* Garante que o padding não afete o tamanho total */
+            }
+        }
+    `}</style>
 
                 <Container className="text-center">
                     <div>
-                        <h3 className="display-6"> Segunda Igreja Batista no Recanto das Emas</h3>
-                        <p className="lead pb-4">"Servi ao Senhor com alegria!"</p>
+                        <p>Resumo das nossas atividades</p>
                     </div>
                     <div className="row">
-                        <div className="col-lg-4">
-                            <div className="rounded-circle circulo1 centralizar" />
+                        <div className="col-lg-4 col-md-6 col-12">
+                            <div className="rounded-circle circulo1 centralizar" style={{ backgroundImage: 'url(/templo_interno.jpg)' }} />
                             <h2 className="mt-4 mb-4">Nossos Encontros</h2>
                             <Link href="/comunhao">
-                                <a className="btn btn-light"><p>Viver em comunhão é uma marca da nossa comunidade.
-                                Venha ser igreja com a gente!
-                                Encontros de oração na terça feira às 7h -
-                                PG homens terça às 20h -
-                                Culto de oração quarta às 20h -
-                                Escola Biblica Dominical EBD às 09hs -                                
-                                Culto de celebração domingo às 19h
-                                    </p></a>
+                                <a className="btn btn-light" style={{ textAlign: 'center', display: 'block', height: 225 }}>
+                                    <p style={{ margin: 0 }}>
+                                        Viver em comunhão é uma marca da nossa comunidade. Venha ser igreja com a gente!
+                                    </p>
+                                    <ul style={{ textAlign: 'center', paddingLeft: 0, margin: '0.5rem 0', listStyleType: 'none' }}>
+                                        <li>Encontros de oração às terças-feiras às 7h.</li>
+                                        <li>PG homens terça às 20h.</li>
+                                        <li>Culto de oração quarta às 20h.</li>
+                                        <li>PG mulheres sábado às 17h.</li>
+                                        <li>Escola Bíblica Dominical (EBD) às 17h.</li>
+                                        <li>Culto noturno domingo às 19h.</li>
+                                    </ul>
+                                </a>
                             </Link>
                         </div>
-                        <div className="col-lg-4">
-                            <div className="rounded-circle circulo2 centralizar2" />
+                        <div className="col-lg-4 col-md-6 col-12">
+                            <div className="rounded-circle circulo2 centralizar2" style={{ backgroundImage: 'url(/cesta.png)' }} />
                             <h2 className="mt-4 mb-4">Ação Social</h2>
                             <Link href="/acao_social">
-                                <a className="btn btn-light"><p>Ajudar como Cristo ajudaria e amar como Ele nos ama é a missão do ministério de Ação Social. Seja servindo com doação de alimentos ou roupas, trabalhamos para socorrer ao próximo em sua necessidade.
-
-</p></a>
+                                <a style={{ height: 225 }} className="btn btn-light">
+                                    <p>Ajudar como Cristo ajudaria e amar como Ele nos ama é a missão do ministério de Ação Social. Seja servindo com doação de alimentos ou roupas, trabalhamos para socorrer ao próximo em sua necessidade.</p>
+                                </a>
                             </Link>
                         </div>
-                        <div className="col-lg-4">
-                            <div className="rounded-circle circulo3 centralizar3" />
-                            <h2 className="mt-4 mb-4">Apoio Psicológico</h2>
+                        <div className="col-lg-4 col-md-6 col-12">
+                            <div className="rounded-circle circulo3 centralizar3" style={{ backgroundImage: 'url(/jiu-jitsu.jpg)' }} />
+                            <h2 className="mt-4 mb-4">Projeto Jiu-Jitsu</h2>
                             <Link href="/apoio_Psicologico">
-                                <a className="btn btn-light"><p>Nosso objetivo está em prestar atendimento psicológico à comunidade em geral. Estes são realizados todas as sextas-feiras nas dependências de nossa igreja por um trio de psicólogos preparados para acolher aqueles que nos procuram..</p></a>
+                                <a className="btn btn-light">
+                                    <p>A igreja oferece aulas gratuitas de Jiu-Jitsu para a comunidade, promovendo saúde, disciplina e inclusão. Durante as aulas, os alunos também têm a oportunidade de ouvir a Palavra de Deus, fortalecendo a fé e os valores como respeito e trabalho em equipe. Participe e faça parte dessa iniciativa que transforma vidas!</p>
+                                </a>
                             </Link>
                         </div>
                     </div>
                 </Container>
+                <Link href="/comunhao">
+                    <p style={{ color: 'blue', textDecoration: 'underline', cursor: 'pointer', textAlign: 'center', marginTop: '20px' }}>
+                        Clique aqui para saber mais...
+                    </p>
+                </Link>
             </Jumbotron>
             <RodaPe />
         </div>
-
     );
 }
 
