@@ -52,20 +52,14 @@ function Home({ data }) {
 
                     .descr-top h1 {
                         font-size: 2.0rem; /* Reduz o tamanho da fonte do título */
-                        margin-top: 20px;
+                        margin-top: 40px;
                     }
 
                     .descr-top a {
                         font-size: 0.9rem; /* Diminui o botão */
                         padding: 0.5rem 1rem; /* Ajusta o tamanho interno do botão */
                     }
-                }
-             
-                @media (max-width: 768px) { /* Ajuste para telas menores, como celulares */    
-                .col-lg-4 {
-                    text-align: center; /* Garante que o conteúdo nas colunas esteja centralizado */
-                    margin-bottom: 50px; /* Ajusta a margem inferior para reduzir o espaçamento */
-                }   
+                }               
              
             `}</style>
                 <Container>
@@ -76,6 +70,12 @@ function Home({ data }) {
                 p.lead {
                     font-style: italic; /* Aplica itálico no texto do parágrafo */
                 }
+
+                @media (max-width: 768px) { /* Ajuste para telas menores, como celulares */    
+                .col-lg-4 {
+                    text-align: center; /* Garante que o conteúdo nas colunas esteja centralizado */
+                    margin-bottom: 50px; /* Ajusta a margem inferior para reduzir o espaçamento */
+                }   
             `}</style>
                     <br></br><h1 className="display-5">Segunda Igreja Batista no Recanto das Emas</h1>
                     <p className="lead pb-4">Um lugar de comunhão, louvor e adoração a Deus.</p>
@@ -108,7 +108,7 @@ function Home({ data }) {
             }.circulo3{
             width: 200px;
             height: 200px;
-            background-image: url(/psicologo.png);
+            background-image: url(/jiu-jitsu.jpg);
             }.centralizar3{
             margin: 0 auto !important;
             float: none !important;
@@ -152,7 +152,7 @@ function Home({ data }) {
                             <div className="rounded-circle circulo3 centralizar3" />
                             <h2 className="mt-4 mb-4">Projeto Jiu-Jitsu</h2>
                             <Link href="/apoio_Psicologico">
-                                <a className="btn btn-light"><p>A igreja oferece aulas gratuitas de Jiu-Jitsu para a comunidade, promovendo saúde, disciplina e inclusão. Durante as aulas, os alunos também têm a oportunidade de ouvir a Palavra de Deus, fortalecendo a fé e os valores como respeito e trabalho em equipe. Participe e faça parte dessa iniciativa que transforma vidas!.</p></a>
+                                <a className="btn btn-light"><p>A igreja oferece aulas gratuitas de Jiu-Jitsu para a comunidade, promovendo saúde, disciplina e inclusão. Durante as aulas, os alunos também têm a oportunidade de ouvir a Palavra de Deus, fortalecendo a fé e os valores como respeito e trabalho em equipe. Participe e faça parte dessa iniciativa que transforma vidas!</p></a>
                             </Link>
                         </div>
                     </div>                   
