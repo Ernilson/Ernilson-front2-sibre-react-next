@@ -1,28 +1,38 @@
-import React,  { useState, useEffect } from 'react';
+
+import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import { Jumbotron, Container } from 'reactstrap';
+import { useState, useEffect } from 'react';
+
 
 import Menu from '../componete/Menu.js';
 import RodaPe from '../componete/RodaPe.js';
 
 
 function Home({ data }) {
-
-    const [isSmallScreen, setIsSmallScreen] = useState(false);
+    const [imageSrc, setImageSrc] = useState("/agenda-semanal3.jpg");
+    const [headerBg, setHeaderBg] = useState("/header4.png");
 
     useEffect(() => {
-      // Verifica o tamanho da tela apenas no cliente
-      const checkScreenSize = () => {
-        setIsSmallScreen(window.innerWidth < 576);
-      };
-  
-      checkScreenSize(); // Chama a função ao carregar o componente
-      window.addEventListener("resize", checkScreenSize);
-  
-      return () => window.removeEventListener("resize", checkScreenSize);
+        const handleResize = () => {
+            if (window.innerWidth < 576) {
+                setImageSrc("/agenda-semanal.jpg");
+                setHeaderBg("/header3.png");
+            } else {
+                setImageSrc("/agenda-semanal3.jpg");
+                setHeaderBg("/header4.png");
+            }
+        };
+
+        handleResize(); 
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
     }, []);
- 
+
 
     return (
         <div>
@@ -33,51 +43,45 @@ function Home({ data }) {
                 <meta name="author" content="Ernilson Daniel Lima de Souza" />
             </Head>
             <Menu />
-            <Jumbotron fluid className="descr-top">
-        <style>{`
-          .descr-top {
-            background-image: url(/header4.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            width: 100%;
-            min-height: 200px;
-            max-height: 225px;
-            max-width: 1300px;
-            color: #FFF;
-            text-align: center;
-            margin: 0 auto;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-          }
-        `}</style>
-
-        <Container>
-          {!isSmallScreen && (
-            <h2
-              className="display-5"
-              style={{
-                marginTop: "200px",
-                color: "#17A2B8",
-                fontWeight: "bold",
-                fontSize: "1.5rem",
-              }}
-            >
-              Um lugar de comunhão, louvor e adoração a Deus
-            </h2>
-          )}
-        </Container>
-      </Jumbotron>      
+            <Jumbotron fluid className="descr-top" style={{ backgroundImage: `url(${headerBg})` }}>
+                <style>{`
+                      .descr-top {                        
+                        background-repeat: no-repeat;
+                        background-size: cover; /* Mantém o preenchimento total */
+                        background-position: center;
+                        width: 100%;
+                        min-height: 200px; /* Altura mínima */
+                        max-height: 225px; /* Altura máxima */
+                        max-width: 1300px; /* Limita a largura */
+                        color: #FFF;
+                        text-align: center;
+                        margin: 0 auto;
+                        overflow: hidden;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }                  
+                    
+                    /* Media query para telas pequenas (ex: abaixo de 400px de largura) */
+                    @media (max-width: 399px) {                       
+                    .descr-top h2 {
+                        display: none; /* Oculta o parágrafo em telas pequenas */                        
+                      }
+                  
+                    }
+                  `}</style>
+                   <Container>                          
+                   <h2 className="display-5" style={{ marginTop: '200px', color: '#17A2B8', fontWeight: 'bold', fontSize: '1.5rem' }}>Um lugar de comunhão, louvor e adoração a Deus</h2>
+                </Container>              
+            </Jumbotron>          
 
             <Jumbotron fluid className="servicos">
                 <style>{`.servicos {
                     padding-top: 20px;
                     padding-bottom: 0px;
                     background: #FFF;
-                    margin-bottom: 0rem !important;
+                    margin-bottom: -2rem !important;
                 }
 
                 .circulo {
@@ -163,16 +167,20 @@ function Home({ data }) {
                     padding-top: 20px;
                     padding-bottom: 60px;
                     background: #FFF;
-                    margin-bottom: 0rem !important;              
-                }               
-                     
-                `}</style>
+                    margin-bottom: -2rem !important;                            
+                }    
+                
+                @media (min-width: 768px) { /* Ajusta apenas em telas maiores */
+                .agenda img {
+                    transform: scale(1.1);
+                }
+                `}</style>              
                 <Container className="text-center">
                     <h2 className="mt-4 mb-4" style={{ color: '#102658', fontWeight: 'bold' }}>
                         Agenda Semanal
                     </h2>
-                    <img src="/agenda-semanal3.jpg" alt="Agenda Semanal" style={{ maxWidth: '101%', height: 'auto'}} />
-                </Container>
+                    <img src={imageSrc} alt="Agenda Semanal" style={{ maxWidth: '100%', height: 'auto' }} />
+                </Container>     
             </Jumbotron>
             <RodaPe />
         </div>
