@@ -1,7 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import { Jumbotron, Container } from 'reactstrap';
 import { useState, useEffect } from 'react';
 
@@ -11,21 +10,14 @@ import RodaPe from '../componete/RodaPe.js';
 
 
 function Home({ data }) {
-    const [imageSrc, setImageSrc] = useState("/agenda-semanal3.jpg");
-    const [headerBg, setHeaderBg] = useState("/header4.png");
+    const [isSmallScreen, setIsSmallScreen] = useState(false);
 
     useEffect(() => {
         const handleResize = () => {
-            if (window.innerWidth < 400) {
-                setImageSrc("/agenda-semanal.jpg");
-                setHeaderBg("/header3.png");
-            } else {
-                setImageSrc("/agenda-semanal3.jpg");
-                setHeaderBg("/header4.png");
-            }
+            setIsSmallScreen(window.innerWidth < 400);
         };
 
-        handleResize(); 
+        handleResize(); // Verifica a largura inicial
         window.addEventListener('resize', handleResize);
 
         return () => {
@@ -43,7 +35,7 @@ function Home({ data }) {
                 <meta name="author" content="Ernilson Daniel Lima de Souza" />
             </Head>
             <Menu />
-            <Jumbotron fluid className="descr-top" style={{ backgroundImage: `url(${headerBg})` }}>
+            <Jumbotron fluid className="descr-top" style={{ backgroundImage: isSmallScreen ? `url(/header3.png)` : `url(/header4.png)` }}>
                 <style>{`
                       .descr-top {                        
                         background-repeat: no-repeat;
@@ -72,7 +64,11 @@ function Home({ data }) {
                     }
                   `}</style>
                    <Container>                          
-                   <h2 className="display-5" style={{ marginTop: '200px', color: '#17A2B8', fontWeight: 'bold', fontSize: '1.5rem' }}>Um lugar de comunhão, louvor e adoração a Deus</h2>
+                   {isSmallScreen ? null : ( // Renderiza o h2 apenas em telas grandes
+                        <h2 className="display-5">
+                            Um lugar de comunhão, louvor e adoração a Deus
+                        </h2>
+                    )}
                 </Container>              
             </Jumbotron>          
 
@@ -179,7 +175,11 @@ function Home({ data }) {
                     <h2 className="mt-4 mb-4" style={{ color: '#102658', fontWeight: 'bold' }}>
                         Agenda Semanal
                     </h2>
-                    <img src={imageSrc} alt="Agenda Semanal" style={{ maxWidth: '100%', height: 'auto' }} />
+                    <img 
+                src={isSmallScreen ? "/agenda-semanal.jpg" : "/agenda-semanal3.jpg"} 
+                alt="Agenda Semanal" 
+                style={{ maxWidth: '100%', height: 'auto' }} 
+            />
                 </Container>     
             </Jumbotron>
             <RodaPe />
