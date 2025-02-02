@@ -11,7 +11,7 @@ const Menu = () => {
         <div>
             <Navbar color="info" dark expand="md" className="fixed-top">
                 <Container>
-                    <NavbarBrand href="/">Sibre</NavbarBrand>
+                <NavbarBrand href="/"><b>SIBRE</b></NavbarBrand>
                     <NavbarToggler onClick={toggle} />
                     <Collapse isOpen={isOpen} navbar>
                         <Nav className="mr-auto" navbar>

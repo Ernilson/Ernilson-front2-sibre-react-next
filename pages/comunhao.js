@@ -1,5 +1,5 @@
 import React from 'react';
-import { useEffect, useRef, forwardRef } from 'react';
+import { useEffect, useRef, forwardRef, useState } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Menu from '../componete/Menu.js';
@@ -29,6 +29,22 @@ function Encontros() {
     const acaoSocialRef = useRef(null);
     const projetoJiuJitsuRef = useRef(null);
 
+    // Estado para detectar tamanho da tela
+    const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+    // Efeito para atualizar `isSmallScreen` ao redimensionar a tela
+    useEffect(() => {
+        const checkScreenSize = () => {
+            setIsSmallScreen(window.innerWidth < 576);
+        };
+
+        checkScreenSize();
+        window.addEventListener("resize", checkScreenSize);
+
+        return () => window.removeEventListener("resize", checkScreenSize);
+    }, []);
+
+    // Efeito para rolar até a seção correta ao mudar a URL
     useEffect(() => {
         const handleHash = () => {
             if (router.asPath.includes('#')) {
@@ -55,8 +71,7 @@ function Encontros() {
             }
         };
 
-        handleHash(); 
-
+        handleHash();
         router.events.on('routeChangeComplete', handleHash);
 
         return () => {
@@ -88,16 +103,25 @@ function Encontros() {
                         <Section
                             id="domingo-do-senhor"
                             title="Domingo do Senhor"
-                            text="Aos domingos, nos reunimos para estudar a Bíblia e cultuar ao Senhor. Junte-se a nós: Escola Bíblica Dominical (EBD) às 17h. Culto noturno aos domingos às 19h."
+                            text={
+                                <>
+                                    Aos domingos, nos reunimos para estudar a Palavra de Deus e cultuar ao Senhor em comunhão e adoração. Venha fazer parte desse momento conosco!
+                                    <strong> Participe da Escola Bíblica Dominical (EBD) às 17h e do Culto Noturno às 19h. </strong>
+                                    Sua presença é muito importante para nós!
+                                </>
+                            }
                             images={[Domingo6, Domingo7, Domingo8, Domingo1, Domingo3]}
                             ref={domingoDoSenhorRef}
+                            isSmallScreen={isSmallScreen} 
                         />
+
                         <Section
                             id="acao-social"
                             title="Ação Social"
                             text="Ajudar como Cristo ajudaria e amar como Ele nos ama é a missão do ministério de Ação Social. Seja servindo com doação de alimentos ou roupas, trabalhamos para socorrer ao próximo em sua necessidade."
                             images={[acao, acao2]}
                             ref={acaoSocialRef}
+                            isSmallScreen={isSmallScreen}
                         />
                         <Section
                             id="projeto-jiu-jitsu"
@@ -109,18 +133,17 @@ function Encontros() {
                                 </>}
                             images={[JiuJitsu, JiuJitsu2, JiuJitsu5, JiuJitsu6]}
                             ref={projetoJiuJitsuRef}
+                            isSmallScreen={isSmallScreen}
                         />
                     </Container>
                 </main>
             </div>
-            <footer className={styles.footer}>
-                <RodaPe />
-            </footer>
+            <RodaPe />
         </div>
     );
 }
 
-const Section = forwardRef(({ title, text, images }, ref) => {
+const Section = forwardRef(({ title, text, images, isSmallScreen }, ref) => {
     const settings = {
         dots: true,
         infinite: true,
@@ -135,21 +158,23 @@ const Section = forwardRef(({ title, text, images }, ref) => {
     return (
         <div className={styles.section} ref={ref}>
             <div className={styles.sectionText}>
-                <h2 className={styles.sectionTitle}>{title}</h2>
+                <h2
+                    className={styles.sectionTitle}
+                    style={{
+                        fontSize: isSmallScreen ? "1.5rem" : "2rem",
+                        textAlign: "center",
+                        margin: isSmallScreen ? "10px 0" : "20px 0",
+                    }}
+                >
+                    {title}
+                </h2>
                 <p className={styles.sectionLead}>{text}</p>
             </div>
             <div className={styles.sectionImages}>
                 <Slider {...settings}>
                     {images.map((src, index) => (
                         <div key={index} className={styles.sectionImageWrapper}>
-                            <Image
-                                src={src}
-                                className={styles.sectionImage}
-                                alt={title}
-                                layout="responsive"
-                                width={400} 
-                                height={200} 
-                            />
+                            <Image src={src} className={styles.sectionImage} alt={title} layout="responsive" width={400} height={200} />
                         </div>
                     ))}
                 </Slider>
@@ -157,7 +182,5 @@ const Section = forwardRef(({ title, text, images }, ref) => {
         </div>
     );
 });
-
-Section.displayName = "Section";
 
 export default Encontros;
