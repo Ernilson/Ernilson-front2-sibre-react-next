@@ -3,13 +3,36 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Jumbotron, Container } from 'reactstrap';
+import { useState, useEffect } from 'react';
+
 
 import Menu from '../componete/Menu.js';
 import RodaPe from '../componete/RodaPe.js';
 
 
 function Home({ data }) {
-    const router = useRouter();   
+    const [imageSrc, setImageSrc] = useState("/agenda-semanal3.jpg");
+    const [headerBg, setHeaderBg] = useState("/header4.png");
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth < 400) {
+                setImageSrc("/agenda-semanal.jpg");
+                setHeaderBg("/header3.png");
+            } else {
+                setImageSrc("/agenda-semanal3.jpg");
+                setHeaderBg("/header4.png");
+            }
+        };
+
+        handleResize(); 
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
 
     return (
         <div>
@@ -20,10 +43,9 @@ function Home({ data }) {
                 <meta name="author" content="Ernilson Daniel Lima de Souza" />
             </Head>
             <Menu />
-            <Jumbotron fluid className="descr-top">
+            <Jumbotron fluid className="descr-top" style={{ backgroundImage: `url(${headerBg})` }}>
                 <style>{`
-                      .descr-top {
-                        background-image: url(/header4.png);
+                      .descr-top {                        
                         background-repeat: no-repeat;
                         background-size: cover; /* Mantém o preenchimento total */
                         background-position: center;
@@ -42,12 +64,7 @@ function Home({ data }) {
                     }                  
                     
                     /* Media query para telas pequenas (ex: abaixo de 400px de largura) */
-                    @media (max-width: 399px) { 
-                        .descr-top {
-                            min-height: 250px; /* Aumenta a altura mínima da imagem */
-                            max-height: 270px; /* Aumenta a altura máxima da imagem */
-                            background-image: url(/header3.png); /* Usando a imagem header3.png em telas pequenas */
-                        }
+                    @media (max-width: 399px) {                       
                     .descr-top h2 {
                         display: none; /* Oculta o parágrafo em telas pequenas */                        
                       }
@@ -64,7 +81,7 @@ function Home({ data }) {
                     padding-top: 20px;
                     padding-bottom: 0px;
                     background: #FFF;
-                    margin-bottom: 0rem !important;
+                    margin-bottom: -2rem !important;
                 }
 
                 .circulo {
@@ -150,23 +167,20 @@ function Home({ data }) {
                     padding-top: 20px;
                     padding-bottom: 60px;
                     background: #FFF;
-                    margin-bottom: 0rem !important;              
-                }
+                    margin-bottom: -2rem !important;                            
+                }    
                 
-                /* Media query para telas pequenas (ex: abaixo de 400px de largura) */
-                @media (max-width: 399px) {
+                @media (min-width: 768px) { /* Ajusta apenas em telas maiores */
                 .agenda img {
-                    content: url("/agenda-semanal.jpg"); /* Troca a imagem */
-                    margin-bottom: -3rem; 
-                    
-                }                
-                `}</style>
+                    transform: scale(1.1);
+                }
+                `}</style>              
                 <Container className="text-center">
                     <h2 className="mt-4 mb-4" style={{ color: '#102658', fontWeight: 'bold' }}>
                         Agenda Semanal
                     </h2>
-                    <img src="/agenda-semanal3.jpg" alt="Agenda Semanal" style={{ maxWidth: '100%', height: 'auto' }} />
-                </Container>
+                    <img src={imageSrc} alt="Agenda Semanal" style={{ maxWidth: '100%', height: 'auto' }} />
+                </Container>     
             </Jumbotron>
             <RodaPe />
         </div>
