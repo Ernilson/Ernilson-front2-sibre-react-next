@@ -1,4 +1,4 @@
-import React,  { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import { Jumbotron, Container } from 'reactstrap';
@@ -12,17 +12,17 @@ function Home({ data }) {
     const [isSmallScreen, setIsSmallScreen] = useState(false);
 
     useEffect(() => {
-      // Verifica o tamanho da tela apenas no cliente
-      const checkScreenSize = () => {
-        setIsSmallScreen(window.innerWidth < 576);
-      };
-  
-      checkScreenSize(); // Chama a função ao carregar o componente
-      window.addEventListener("resize", checkScreenSize);
-  
-      return () => window.removeEventListener("resize", checkScreenSize);
+        // Verifica o tamanho da tela apenas no cliente
+        const checkScreenSize = () => {
+            setIsSmallScreen(window.innerWidth < 576);
+        };
+
+        checkScreenSize(); // Chama a função ao carregar o componente
+        window.addEventListener("resize", checkScreenSize);
+
+        return () => window.removeEventListener("resize", checkScreenSize);
     }, []);
- 
+
 
     return (
         <div>
@@ -34,7 +34,7 @@ function Home({ data }) {
             </Head>
             <Menu />
             <Jumbotron fluid className="descr-top">
-        <style>{`
+                <style>{`
           .descr-top {
             background-image: url(${isSmallScreen ? '/header3.png' : '/header4.png'});
             background-repeat: no-repeat;
@@ -55,22 +55,22 @@ function Home({ data }) {
           }
         `}</style>
 
-        <Container>
-          {!isSmallScreen && (
-            <h2
-              className="display-5"
-              style={{
-                marginTop: "200px",
-                color: "#17A2B8",
-                fontWeight: "bold",
-                fontSize: "1.5rem",
-              }}
-            >
-              Um lugar de comunhão, louvor e adoração a Deus
-            </h2>
-          )}
-        </Container>
-      </Jumbotron>  
+                <Container>
+                    {!isSmallScreen && (
+                        <h2
+                            className="display-5"
+                            style={{
+                                marginTop: "200px",
+                                color: "#17A2B8",
+                                fontWeight: "bold",
+                                fontSize: "1.5rem",
+                            }}
+                        >
+                            Um lugar de comunhão, louvor e adoração a Deus
+                        </h2>
+                    )}
+                </Container>
+            </Jumbotron>
 
             <Jumbotron fluid className="servicos">
                 <style>{`.servicos {
@@ -95,8 +95,8 @@ function Home({ data }) {
                     margin-bottom: 2rem;                     
                 }
                 `}</style>
-                <Container className="text-center">                
-                    <h3 className="mt-4 mb-4" style={{ color: '#102658', fontWeight: 'bold'}}>
+                <Container className="text-center">
+                    <h3 className="mt-4 mb-4" style={{ color: '#102658', fontWeight: 'bold' }}>
                         Nossas Atividades
                     </h3>
                     <div className="row">
@@ -104,7 +104,7 @@ function Home({ data }) {
                             <Link href="/comunhao#domingo-do-senhor">
                                 <div>
                                     <div className="circulo" style={{ backgroundImage: 'url(/templo_interno.jpg)' }} />
-                                    <h3 className="mt-4 mb-4" style={{ color: '#102658', fontWeight: 'bold',  fontSize: '1.6rem' }}>
+                                    <h3 className="mt-4 mb-4" style={{ color: '#102658', fontWeight: 'bold', fontSize: '1.6rem' }}>
                                         Domingo do Senhor
                                     </h3>
                                     <div className="btn btn-light">
@@ -145,9 +145,9 @@ function Home({ data }) {
                                 </div>
                             </Link>
                         </div>
-                        
+
                         <div style={{ textAlign: 'center', marginTop: '20px' }}>
-                            Venha conhecer mais sobre nossas atividades!  
+                            Venha conhecer mais sobre nossas atividades!
                             <Link href="/comunhao">
                                 <a style={{ color: 'blue', textDecoration: 'underline', cursor: 'pointer' }}> Clique aqui</a>
                             </Link>
@@ -158,22 +158,48 @@ function Home({ data }) {
             </Jumbotron>
 
             <Jumbotron fluid className="agenda">
-                <style>{`.agenda {
-                    margin-top: 10px
+                 <style>{`
+                    .agenda {
+                    position: relative;
+                    margin-top: 10px;
                     padding-top: 20px;
-                    padding-bottom: 60px;
-                    background: #FFF;
-                    margin-bottom: 0rem !important;              
-                }               
-                     
+                    padding-bottom: 0px;
+                    background-size: cover;
+                    margin-bottom: 0rem !important;
+                    background-color: transparent !important; /* Remove qualquer fundo */
+                    }
+
+                    .agenda h2 {
+                    position: relative;
+                    z-index: 2;
+                    background: white; /* Branco puro sem transparência */
+                    display: inline-block;
+                    padding: 10px 20px;
+                    border-radius: 8px;
+                    }
+
+                    .agenda-container {
+                    position: relative;
+                    z-index: 1;
+                    background-color: transparent !important; /* Remove fundo indesejado */
+                    }
                 `}</style>
+
                 <Container className="text-center">
                     <h2 className="mt-4 mb-4" style={{ color: '#102658', fontWeight: 'bold' }}>
                         Agenda Semanal
                     </h2>
-                    <img src="/agenda-semanal3.jpg" alt="Agenda Semanal" style={{ maxWidth: '101%', height: 'auto'}} />
+                </Container>
+
+                <Container className="text-center agenda-container">
+                    <img
+                        src={isSmallScreen ? "/agenda-semanal.jpg" : "/agenda-semanal3.jpg"}
+                        alt="Agenda Semanal"
+                        style={{ maxWidth: "100%", height: "auto", marginTop: "10px", background: "transparent" }}
+                    />
                 </Container>
             </Jumbotron>
+
             <RodaPe />
         </div>
     );
