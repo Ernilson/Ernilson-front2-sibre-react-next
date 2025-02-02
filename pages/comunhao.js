@@ -105,7 +105,7 @@ function Encontros() {
                             text={
                                 <>
                                     Nossa igreja oferece aulas gratuitas de jiu-jítsu para a comunidade, promovendo saúde, disciplina e inclusão. Durante as aulas, os alunos também têm a oportunidade de ouvir a Palavra de Deus, fortalecendo a fé e valores como respeito e trabalho em equipe. Participe!<br />
-                                    <p style={{ fontWeight: 'bold' }}>As aulas acontecem às quartas-feiras, 19h, e aos sábados, 10h. </p>
+                                    <p style={{ fontWeight: 'bold' }}>As aulas acontecem às quintas-feiras, 19h, e aos sábados, 10h. </p>
                                 </>}
                             images={[JiuJitsu, JiuJitsu2, JiuJitsu5, JiuJitsu6]}
                             ref={projetoJiuJitsuRef}
