@@ -23,6 +23,7 @@
     font-size: 1.8rem; 
     text-shadow: none; 
     color: #102658;
+    margin-bottom: -2px;
 }
 
 .section {
@@ -77,32 +78,5 @@
     max-height: 100%; 
 }
 
-/* Media query para telas pequenas (ex: abaixo de 400px de largura) */
-@media (max-width: 399px) {
-    .title {
-        font-size: 2rem; 
-        margin-bottom: 20px;
-    }
 
-    .subtitle {
-        font-size: 1.6rem;
-        margin-bottom: -5px;
 
-    }
-
-    .sectionTitle { 
-        font-size: 1.7rem; 
-        text-align: center;
-        
-    }
-
-    .sectionImageWrapper {
-        width: 100%; 
-    }
-
-    .sectionImage {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; 
-    }
-}

@@ -161,7 +161,7 @@ const Section = forwardRef(({ title, text, images, isSmallScreen }, ref) => {
                 <h2
                     className={styles.sectionTitle}
                     style={{
-                        fontSize: isSmallScreen ? "1.5rem" : "2rem",
+                        fontSize: isSmallScreen ? "1.7rem" : "2rem",
                         textAlign: "center",
                         margin: isSmallScreen ? "10px 0" : "20px 0",
                     }}
