@@ -13,4 +13,21 @@
     background: #fff; 
     z-index: 1000; 
   }
+
+  .tooltip {
+    position: absolute;
+    background-color: white; 
+    color: black; 
+    padding: 5px;
+    border-radius: 5px; 
+    font-size: 14px; 
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%); 
+    white-space: nowrap; 
+    z-index: 10; 
+    left: calc(50% - 30px); 
+    transform: translateX(-50%); 
+   
+}
   

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Head from 'next/head';
 import Menu from '../componete/Menu.js';
 import RodaPe from '../componete/RodaPe';
+import BotaoWhatsapp from '../componete/BotaoWhatsapp.js';
 
 import { Jumbotron, Container, Form, FormGroup, Input, Label, Button } from 'reactstrap';
 
@@ -150,6 +151,7 @@ const Oracao = () => {
                     </div>
                 </Container>
             </Jumbotron>
+            <BotaoWhatsapp />
             <RodaPe />
     </div>)    
 }

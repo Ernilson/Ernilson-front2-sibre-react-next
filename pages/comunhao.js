@@ -1,24 +1,76 @@
 import React from 'react';
+import { useEffect, useRef, forwardRef } from 'react';
+import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Menu from '../componete/Menu.js';
 import RodaPe from '../componete/RodaPe';
 import { Container } from 'reactstrap';
 import Image from 'next/image';
 import styles from '../styles/encontros.module.css';
-import PrLacir from '../public/PrLacir.jpeg';
-import CultoPrLaci from '../public/CultoPrLaci.jpeg';
-import Louvor2 from '../public/Louvor2.0.jpeg';
-import Louvor from '../public/Louvor.jpg';
-import oracao1 from '../public/oracao1.png';
+import Domingo1 from '../public/Encontros1.jpg';
+import Domingo3 from '../public/Encontros3.jpg';
+import Domingo6 from '../public/Encontros6.jpg';
+import Domingo7 from '../public/Encontros7.jpg';
+import Domingo8 from '../public/Encontros8.jpg';
+import JiuJitsu from '../public/jiu-jitsu.jpg';
+import JiuJitsu2 from '../public/jiu-jitsu2.jpg';
+import JiuJitsu5 from '../public/jiu-jitsu5.jpg';
+import JiuJitsu6 from '../public/jiu-jitsu6.jpg';
+import acao from '../public/acao.jpg';
+import acao2 from '../public/acao2.png';
+
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 function Encontros() {
+    const router = useRouter();
+    const domingoDoSenhorRef = useRef(null);
+    const acaoSocialRef = useRef(null);
+    const projetoJiuJitsuRef = useRef(null);
+
+    useEffect(() => {
+        const handleHash = () => {
+            if (router.asPath.includes('#')) {
+                const id = router.asPath.split('#')[1];
+                let element = null;
+
+                switch (id) {
+                    case 'domingo-do-senhor':
+                        element = domingoDoSenhorRef.current;
+                        break;
+                    case 'acao-social':
+                        element = acaoSocialRef.current;
+                        break;
+                    case 'projeto-jiu-jitsu':
+                        element = projetoJiuJitsuRef.current;
+                        break;
+                    default:
+                        break;
+                }
+
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }
+        };
+
+        handleHash(); 
+
+        router.events.on('routeChangeComplete', handleHash);
+
+        return () => {
+            router.events.off('routeChangeComplete', handleHash);
+        };
+    }, [router]);
+
     return (
         <div>
             <Head>
                 <title>Comunhão</title>
                 <meta name='robots' content='index, follow' />
-                <meta name="description" content="Logo abaixo temos a história da Segunda Igreja Batista no Recanto das Emas-DF"></meta>
-                <meta name="author" content="Ernilson Daniel Lima de Souza" />
+                <meta name="description" content="História da Segunda Igreja Batista no Recanto das Emas-DF"></meta>
+                <meta name="author" content="Juliana Lima de Souza" />
             </Head>
             <Menu />
             <div className={styles.mainContent}>
@@ -33,20 +85,30 @@ function Encontros() {
                 </header>
                 <main>
                     <Container>
-                        <Section 
-                            title="Nossos Encontros"
-                            text="Viver em comunhão é uma marca da nossa comunidade. Venha ser igreja com a gente! Encontros de oração: terças às 07hs - PG homens: terça às 20hs - Culto de oração: quarta às 20hs - Escola Bíblica Dominical EBD: domingo às 09hs - Culto de celebração domingo: às 19hs."
-                            images={[PrLacir, CultoPrLaci]}
+                        <Section
+                            id="domingo-do-senhor"
+                            title="Domingo do Senhor"
+                            text="Aos domingos, nos reunimos para estudar a Bíblia e cultuar ao Senhor. Junte-se a nós: Escola Bíblica Dominical (EBD) às 17h. Culto noturno aos domingos às 19h."
+                            images={[Domingo6, Domingo7, Domingo8, Domingo1, Domingo3]}
+                            ref={domingoDoSenhorRef}
                         />
-                        <Section 
-                            title="Louvai ao Senhor"
-                            text="“Tudo que respira louve ao Senhor!” Como Deus habita no meio dos louvores, no lugar da adoração é onde queremos estar."
-                            images={[Louvor, Louvor2]}
+                        <Section
+                            id="acao-social"
+                            title="Ação Social"
+                            text="Ajudar como Cristo ajudaria e amar como Ele nos ama é a missão do ministério de Ação Social. Seja servindo com doação de alimentos ou roupas, trabalhamos para socorrer ao próximo em sua necessidade."
+                            images={[acao, acao2]}
+                            ref={acaoSocialRef}
                         />
-                        <Section 
-                            title="Orai sem cessar"
-                            text="Buscamos ao Senhor, buscamos a Sua soberana vontade e Sua graça. “A fé sobe pelas escadas que o amor construiu, e olha pelas janelas que a esperança abriu”."
-                            images={[oracao1]}
+                        <Section
+                            id="projeto-jiu-jitsu"
+                            title="Projeto Jiu-Jitsu"
+                            text={
+                                <>
+                                    Nossa igreja oferece aulas gratuitas de jiu-jítsu para a comunidade, promovendo saúde, disciplina e inclusão. Durante as aulas, os alunos também têm a oportunidade de ouvir a Palavra de Deus, fortalecendo a fé e valores como respeito e trabalho em equipe. Participe!<br />
+                                    <p style={{ fontWeight: 'bold' }}>As aulas acontecem às quartas-feiras, 19h, e aos sábados, 10h. </p>
+                                </>}
+                            images={[JiuJitsu, JiuJitsu2, JiuJitsu5, JiuJitsu6]}
+                            ref={projetoJiuJitsuRef}
                         />
                     </Container>
                 </main>
@@ -58,22 +120,44 @@ function Encontros() {
     );
 }
 
-function Section({ title, text, images }) {
+const Section = forwardRef(({ title, text, images }, ref) => {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        pauseOnHover: true,
+    };
+
     return (
-        <div className={styles.section}>
+        <div className={styles.section} ref={ref}>
             <div className={styles.sectionText}>
                 <h2 className={styles.sectionTitle}>{title}</h2>
                 <p className={styles.sectionLead}>{text}</p>
             </div>
             <div className={styles.sectionImages}>
-                {images.map((src, index) => (
-                    <div key={index} className={styles.sectionImageWrapper}>
-                        <Image src={src} className={styles.sectionImage} alt={title} layout="responsive" width={500} height={500} />
-                    </div>
-                ))}
+                <Slider {...settings}>
+                    {images.map((src, index) => (
+                        <div key={index} className={styles.sectionImageWrapper}>
+                            <Image
+                                src={src}
+                                className={styles.sectionImage}
+                                alt={title}
+                                layout="responsive"
+                                width={400} 
+                                height={200} 
+                            />
+                        </div>
+                    ))}
+                </Slider>
             </div>
         </div>
     );
-}
+});
+
+Section.displayName = "Section";
 
 export default Encontros;
